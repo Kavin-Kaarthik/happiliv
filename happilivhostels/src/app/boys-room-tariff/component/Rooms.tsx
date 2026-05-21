@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 import { motion } from 'framer-motion';
 
 const rooms = [
@@ -56,28 +57,83 @@ const rooms = [
         ]
     }
 ];
+
 const scrollToContactForm = () => {
-  const section = document.getElementById('contact-form');
-  if (section) {
-    section.scrollIntoView({
-      behavior: 'smooth',
-      block: 'start',
-    });
-  }
+    const section = document.getElementById('contact-form');
+
+    if (section) {
+        section.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+        });
+    }
 };
 
-
 const FeatureIcon = ({ icon }: { icon: string }) => {
-    return <Image src={icon} alt="feature" width={20} height={20} className="w-5 h-4" />;
+    return (
+        <Image
+            src={icon}
+            alt="feature"
+            width={20}
+            height={20}
+            className="w-5 h-4"
+        />
+    );
 };
 
 export default function BoysRoomSection() {
     return (
         <section className="py-14 px-4">
+
             <div className="max-w-6xl mx-auto">
 
+                {/* SEO INTERNAL LINKS */}
+                <div className="text-center mb-12">
+
+                    <h2 className="text-3xl md:text-4xl font-bold mb-4 text-black">
+                        Boys Hostel Near Christ University
+                    </h2>
+
+                    <p className="text-gray-700 text-lg leading-relaxed max-w-4xl mx-auto">
+                        Looking for safe, affordable, and fully furnished student accommodation?
+                        Explore our premium{" "}
+
+                        <Link
+                            href="/boys-hostel-near-christ-university"
+                            className="text-blue-600 font-semibold underline hover:text-blue-800 transition"
+                        >
+                            boys hostel near Christ University
+                        </Link>
+
+                        {" "}with modern amenities, WiFi, food facilities, and comfortable student living.
+                    </p>
+
+                    {/* BUTTONS */}
+                    <div className="flex flex-wrap justify-center gap-4 mt-6">
+
+                        <Link
+                            href="/boys-hostel-near-christ-university"
+                            className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-xl font-semibold transition"
+                        >
+                            Explore Boys Hostel
+                        </Link>
+
+                        <Link
+                            href="/contact"
+                            className="bg-pink-600 hover:bg-pink-700 text-white px-6 py-3 rounded-xl font-semibold transition"
+                        >
+                            Contact Now
+                        </Link>
+
+                    </div>
+
+                </div>
+
+                {/* ROOM CARDS */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
                     {rooms.map((room) => (
+
                         <motion.div
                             key={room.id}
                             initial={{ opacity: 0, y: 30 }}
@@ -88,12 +144,10 @@ export default function BoysRoomSection() {
                             className="bg-white rounded-2xl shadow-lg overflow-hidden"
                         >
 
-
-                            {/* IMAGE WITH CLIP-PATH */}
-                            {/* SHADOW WRAPPER */}
+                            {/* IMAGE */}
                             <div className="relative h-56 w-full">
 
-                                {/* SHADOW WITH SAME CLIP-PATH */}
+                                {/* SHADOW */}
                                 <div
                                     className="absolute inset-0 bg-[#b62b49] blur-3xl opacity-20 translate-y-1"
                                     style={{
@@ -110,27 +164,28 @@ export default function BoysRoomSection() {
                                             'polygon(41% 0, 100% 0, 100% 35%, 100% 96%, 80% 92%, 58% 91%, 22% 95%, 0 100%, 0% 35%, 0 0)'
                                     }}
                                 >
+
                                     <Image
                                         src={room.image}
-                                        alt="Single Occupancy"
+                                        alt={room.title}
                                         fill
                                         className="object-cover"
                                     />
 
-                                    {/* Badge */}
+                                    {/* BADGE */}
                                     <div className="absolute top-4 left-4 z-10">
                                         <span className="bg-gray-700 text-white px-4 py-2 rounded-full text-xs font-semibold">
                                             {room.badge}
                                         </span>
                                     </div>
+
                                 </div>
 
                             </div>
 
-
-
                             {/* CONTENT */}
                             <div className="p-6">
+
                                 <h3 className="text-2xl font-semibold text-black mb-2">
                                     {room.title}
                                 </h3>
@@ -140,14 +195,17 @@ export default function BoysRoomSection() {
                                     <span className="text-xl font-semibold text-[#002b5b]">
                                         {room.price}
                                     </span>
+
                                     <span className="text-gray-600 text-base ml-2">
-                                        Per Month
+                                        {room.period}
                                     </span>
                                 </div>
 
                                 {/* FEATURES */}
                                 <div className="space-y-3 mb-6">
+
                                     {room.features.map((feature) => (
+
                                         <div
                                             key={feature.id}
                                             className="flex items-center gap-3 text-gray-700 text-[13px]"
@@ -155,24 +213,43 @@ export default function BoysRoomSection() {
                                             <FeatureIcon icon={feature.icon} />
                                             {feature.title}
                                         </div>
+
                                     ))}
+
                                 </div>
 
                                 {/* BUTTON */}
-                                <button className="cursor-pointer w-full bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-3 rounded-full transition flex items-center justify-center"
-                                  onClick={scrollToContactForm}
-                                  >
-                                    <span> Book Now</span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-4">
-                                        <path fillRule="evenodd" d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z" clipRule="evenodd" />
+                                <button
+                                    className="cursor-pointer w-full bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-3 rounded-full transition flex items-center justify-center"
+                                    onClick={scrollToContactForm}
+                                >
+                                    <span>Book Now</span>
+
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 24 24"
+                                        fill="currentColor"
+                                        className="size-4 ml-1"
+                                    >
+                                        <path
+                                            fillRule="evenodd"
+                                            d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z"
+                                            clipRule="evenodd"
+                                        />
                                     </svg>
+
                                 </button>
+
                             </div>
 
                         </motion.div>
+
                     ))}
+
                 </div>
 
             </div>
+
         </section>
     );
 }

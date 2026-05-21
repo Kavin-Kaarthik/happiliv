@@ -19,23 +19,20 @@ export default function BoysRoomTariff() {
       <Banner />
 
       {/* 🔗 SEO Internal Link Section */}
-      <div className="text-center px-4 mt-6 mb-10">
-        <p className="text-gray-700 text-lg leading-relaxed">
+      <div className="text-center px-4 mt-6">
+        <p className="text-gray-700 text-lg">
           Looking for a complete stay option? Check out our{" "}
-          
-          <Link
-            href="/boys-hostel-near-christ-university"
-            className="text-blue-600 font-semibold underline hover:text-blue-800 transition"
-          >
+       
+       
             boys hostel near Christ University
-          </Link>
-
-          {" "}offering safe, affordable, and fully furnished accommodation.
+          
+          
+          offering safe, affordable, and fully furnished accommodation.
         </p>
 
         <Link
           href="/boys-hostel-near-christ-university"
-          className="inline-block mt-5 bg-blue-600 text-white px-6 py-3 rounded-xl shadow hover:bg-blue-700 transition"
+          className="inline-block mt-4 bg-blue-600 text-white px-6 py-3 rounded-xl shadow hover:bg-blue-700 transition"
         >
           Explore Boys Hostel Near Christ University
         </Link>
