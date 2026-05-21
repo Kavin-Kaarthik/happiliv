@@ -272,50 +272,7 @@ export default function BoysHostelChristUniversity() {
             living away from home.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-y-8 gap-x-16 text-gray-700 text-lg font-medium">
-
-            <div className="flex items-start gap-3">
-              <span className="mt-1">•</span>
-              <span>Safe and secure accommodation</span>
-            </div>
-
-            <div className="flex justify-end">
-              <div className="flex items-start gap-3 text-right">
-                <span className="mt-1">•</span>
-                <span>Affordable pricing options</span>
-              </div>
-            </div>
-
-            <div className="flex items-start gap-3">
-              <span className="mt-1">•</span>
-              <span>Prime location near Christ University</span>
-            </div>
-
-            <div className="flex justify-end">
-              <div className="flex items-start gap-3 text-right">
-                <span className="mt-1">•</span>
-                <span>Student-friendly atmosphere</span>
-              </div>
-            </div>
-
-            <div className="flex items-start gap-3">
-              <span className="mt-1">•</span>
-              <span>Modern amenities and facilities</span>
-            </div>
-
-            <div className="flex justify-end">
-              <div className="flex items-start gap-3 text-right">
-                <span className="mt-1">•</span>
-                <span>Hygienic food and clean surroundings</span>
-              </div>
-            </div>
-
-            <div className="flex items-start gap-3">
-              <span className="mt-1">•</span>
-              <span>Reliable hostel management support</span>
-            </div>
-
-          </div>
+          
         </div>
 
         <Features />
