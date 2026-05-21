@@ -107,9 +107,7 @@ export default function BoysHostelChristUniversity() {
 
           <p className="text-gray-600 mb-6">
             Students often look for accommodation that combines affordability
-            with essential facilities and comfort. HappiLiv Hostels provides
-            well-maintained rooms and modern amenities at student-friendly
-            pricing.
+            with essential facilities and comfort.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-y-6 gap-x-20 text-gray-700 text-lg font-medium">
@@ -170,9 +168,7 @@ export default function BoysHostelChristUniversity() {
 
           <p className="text-gray-600 mb-6">
             Good food and hygiene play an important role in maintaining a
-            healthy student lifestyle. We provide fresh and nutritious meals
-            prepared in a clean and hygienic environment to ensure students
-            enjoy quality food every day.
+            healthy student lifestyle.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-y-6 gap-x-20 text-gray-700 text-lg font-medium">
@@ -218,8 +214,7 @@ export default function BoysHostelChristUniversity() {
 
           <p className="text-gray-600 mb-6">
             One of the biggest advantages of staying at HappiLiv Hostels is our
-            convenient location near Christ University Kengeri campus and
-            surrounding educational institutions.
+            convenient location near Christ University Kengeri campus.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-y-6 gap-x-20 text-gray-700 text-lg font-medium">
@@ -260,79 +255,13 @@ export default function BoysHostelChristUniversity() {
 
           <p className="text-gray-600 mb-6">
             At HappiLiv Hostels, we understand the daily needs of students
-            living away from home. Our goal is to provide a comfortable,
-            affordable, and supportive living environment that helps students
-            focus on academics and personal growth.
+            living away from home.
           </p>
 
           
+        </div>
 
         <Features />
-
-        {/* SECTION 6 */}
-        <div>
-          <h2 className="text-2xl font-semibold mb-4">
-            Comfortable Student Living Experience
-          </h2>
-
-          <p className="text-gray-600 leading-relaxed">
-            Moving to a new city for education can be challenging, especially
-            for students living away from home for the first time. Our hostel is
-            designed to create a welcoming and stress-free environment where
-            students can feel comfortable and supported throughout their
-            academic journey.
-          </p>
-        </div>
-
-        {/* CTA */}
-        
-
-        {/* FAQ */}
-        <div>
-          <h2 className="text-2xl font-semibold mb-6">
-            Frequently Asked Questions
-          </h2>
-
-          <div className="space-y-4">
-
-            {[
-              {
-                q: "Which is the best boys hostel near Christ University?",
-                a: "HappiLiv Hostels offers safe, affordable, and fully furnished accommodation for students near Christ University.",
-              },
-              {
-                q: "Do you provide food facilities for students?",
-                a: "Yes, we provide hygienic vegetarian and non-vegetarian meals for students.",
-              },
-              {
-                q: "Is the hostel safe for students?",
-                a: "Yes, our hostel includes CCTV surveillance, secure access systems, and dedicated hostel support staff.",
-              },
-              {
-                q: "Is WiFi available in the hostel?",
-                a: "Yes, high-speed WiFi is available for all residents.",
-              },
-              {
-                q: "Is the hostel near Christ University Kengeri?",
-                a: "Yes, our hostel is conveniently located near Christ University Kengeri campus.",
-              },
-            ].map((faq, i) => (
-              <div
-                key={i}
-                className="border border-gray-200 rounded-2xl p-5"
-              >
-                <h3 className="font-semibold text-lg text-black">
-                  {faq.q}
-                </h3>
-
-                <p className="text-gray-600 mt-2 leading-relaxed">
-                  {faq.a}
-                </p>
-              </div>
-            ))}
-
-          </div>
-        </div>
 
       </section>
 
