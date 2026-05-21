@@ -60,7 +60,7 @@ export default function Girls() {
 
           {/* CARD 3 */}
           <Link
-            href="/girls-pg-near-christ-university"
+            href="/pg-for-girls-near-christ-university"
             className="bg-gray-100 hover:bg-gray-200 transition rounded-2xl p-8 shadow-md min-h-[180px] flex flex-col justify-center"
           >
             <h3 className="text-2xl font-semibold text-gray-800 mb-3">

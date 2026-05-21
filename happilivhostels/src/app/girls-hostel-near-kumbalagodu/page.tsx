@@ -1,7 +1,6 @@
 import BannerSection from "./Components/Banner";
 import ContactFormSection from "./Components/ContactSection";
 import WhyChoose from "./Components/Why";
-import Link from "next/link";
 import { Metadata } from "next";
 import Image from "next/image";
 
@@ -37,8 +36,8 @@ export default function GirlsHostelKumbalagodu() {
           <p className="text-gray-600 leading-relaxed mb-4">
             Conveniently located near Kumbalagodu and close to major
             educational institutions including Christ University Kengeri
-            campus, our hostel provides everything students need for a peaceful
-            and comfortable stay.
+            campus, our hostel provides everything students need for a
+            peaceful and comfortable stay.
           </p>
 
           <p className="text-gray-600 leading-relaxed">
@@ -51,7 +50,7 @@ export default function GirlsHostelKumbalagodu() {
         {/* IMAGE 1 */}
         <div className="relative w-full h-[300px] rounded-2xl overflow-hidden">
           <Image
-            src="/boys/room2.webp"
+            src="/boys/room1.webp"
             alt="Girls Hostel Near Kumbalagodu"
             fill
             className="object-cover"
@@ -99,16 +98,6 @@ export default function GirlsHostelKumbalagodu() {
             </div>
 
           </div>
-        </div>
-
-        {/* IMAGE 2 */}
-        <div className="relative w-full h-[300px] rounded-2xl overflow-hidden">
-          <Image
-            src="/boys/room1.webp"
-            alt="Girls Hostel Room"
-            fill
-            className="object-cover"
-          />
         </div>
 
         {/* SECTION 2 */}
@@ -164,6 +153,16 @@ export default function GirlsHostelKumbalagodu() {
           </div>
         </div>
 
+        {/* IMAGE 2 */}
+        <div className="relative w-full h-[300px] rounded-2xl overflow-hidden">
+          <Image
+            src="/boys/room2.webp"
+            alt="Girls Hostel Facilities"
+            fill
+            className="object-cover"
+          />
+        </div>
+
         {/* SECTION 3 */}
         <div>
           <h2 className="text-2xl font-semibold mb-4">
@@ -206,7 +205,7 @@ export default function GirlsHostelKumbalagodu() {
         <div className="relative w-full h-[300px] rounded-2xl overflow-hidden">
           <Image
             src="/boys/room3.webp"
-            alt="Hostel Facilities"
+            alt="Girls Hostel Rooms"
             fill
             className="object-cover"
           />
@@ -252,6 +251,40 @@ export default function GirlsHostelKumbalagodu() {
             </div>
 
           </div>
+        </div>
+
+        {/* SECTION 5 */}
+        <div>
+          <h2 className="text-2xl font-semibold mb-4">
+            Why Choose HappiLiv Hostels?
+          </h2>
+
+          <p className="text-gray-600 mb-6">
+            At HappiLiv Hostels, we focus on creating a comfortable and
+            student-friendly environment where residents can concentrate on
+            academics while enjoying a safe and stress-free stay.
+          </p>
+        </div>
+
+        <WhyChoose />
+
+        {/* SECTION 6 */}
+        <div>
+          <h2 className="text-2xl font-semibold mb-4">
+            Comfortable Living Experience for Students
+          </h2>
+
+          <p className="text-gray-600 leading-relaxed">
+            Living away from home for education can be challenging for
+            students. Our hostel is designed to provide a welcoming and
+            supportive environment where students can feel comfortable,
+            safe, and focused on their academic goals.
+          </p>
+
+          <p className="text-gray-600 leading-relaxed mt-4">
+            From peaceful rooms to convenient facilities, every aspect of
+            our hostel is planned to improve the student living experience.
+          </p>
         </div>
 
         {/* FAQ */}
@@ -322,6 +355,7 @@ export default function GirlsHostelKumbalagodu() {
 
           {/* CONTACT CARD */}
           <div className="bg-[#EE1C4C] rounded-2xl p-8 text-white h-[450px] flex flex-col justify-center">
+
             <h3 className="text-2xl font-semibold mb-6">
               Contact HappiLiv Hostels
             </h3>
@@ -345,12 +379,12 @@ export default function GirlsHostelKumbalagodu() {
               </div>
 
             </div>
+
           </div>
 
         </div>
       </section>
 
-      <WhyChoose />
       <ContactFormSection />
     </>
   );

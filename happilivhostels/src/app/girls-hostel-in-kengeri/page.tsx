@@ -26,24 +26,24 @@ export default function GirlsHostelKengeri() {
           </h1>
 
           <p className="text-gray-600 leading-relaxed mb-4">
-            Finding the right accommodation is important for students
-            relocating to Bangalore for education. If you are searching for a
-            girls hostel in Kengeri Bangalore, HappiLiv Hostels offers a
-            comfortable, affordable, and student-friendly living environment
-            designed specifically for modern student needs.
+            Finding comfortable and secure accommodation is essential for
+            students moving to Bangalore for education. If you are searching
+            for a girls hostel in Kengeri Bangalore, HappiLiv Hostels offers a
+            safe, affordable, and student-friendly living environment designed
+            to meet the needs of modern students.
           </p>
 
           <p className="text-gray-600 leading-relaxed mb-4">
-            Conveniently located near educational institutions including
-            Christ University Kengeri campus, our hostel provides easy access
-            to transportation facilities, supermarkets, restaurants, and
-            essential services.
+            Conveniently located near major educational institutions and public
+            transport facilities, our hostel provides easy accessibility,
+            comfortable rooms, hygienic food, and modern amenities for a
+            stress-free student life.
           </p>
 
           <p className="text-gray-600 leading-relaxed">
-            With furnished rooms, hygienic food, high-speed WiFi, and modern
-            amenities, we ensure students enjoy a stress-free and comfortable
-            stay throughout their academic journey.
+            Whether you are looking for long-term accommodation or a reliable
+            place to stay during your studies, we provide everything needed
+            for a comfortable living experience.
           </p>
         </div>
 
@@ -51,7 +51,7 @@ export default function GirlsHostelKengeri() {
         <div className="relative w-full h-[300px] rounded-2xl overflow-hidden">
           <Image
             src="/boys/room1.webp"
-            alt="Girls Hostel in Kengeri"
+            alt="Girls Hostel in Kengeri Bangalore"
             fill
             className="object-cover"
           />
@@ -64,10 +64,9 @@ export default function GirlsHostelKengeri() {
           </h2>
 
           <p className="text-gray-600 mb-6">
-            Safety and comfort are essential when choosing student
-            accommodation. At HappiLiv Hostels, we maintain a secure and
-            peaceful environment where students can stay confidently and focus
-            on academics.
+            Safety is one of the most important factors when choosing student
+            accommodation. At HappiLiv Hostels, we prioritize student safety
+            by maintaining a secure and peaceful environment for all residents.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-y-6 gap-x-20 text-gray-700 text-lg font-medium">
@@ -84,12 +83,12 @@ export default function GirlsHostelKengeri() {
 
             <div className="flex items-start gap-3">
               <span className="mt-1">•</span>
-              <span>Dedicated hostel support staff</span>
+              <span>Dedicated wardens and support staff</span>
             </div>
 
             <div className="flex items-start justify-end gap-3 text-right">
               <span className="mt-1">•</span>
-              <span>Safe and student-friendly surroundings</span>
+              <span>Student-friendly environment</span>
             </div>
 
             <div className="flex items-start gap-3">
@@ -103,14 +102,14 @@ export default function GirlsHostelKengeri() {
         {/* SECTION 2 */}
         <div>
           <h2 className="text-2xl font-semibold mb-4">
-            Affordable Student Accommodation with Modern Amenities
+            Affordable Accommodation for Students
           </h2>
 
           <p className="text-gray-600 mb-6">
-            Students often look for accommodation that offers both
-            affordability and comfort. HappiLiv Hostels provides
-            well-maintained rooms and modern amenities at student-friendly
-            pricing.
+            Students often look for accommodation that is affordable without
+            compromising on comfort and essential facilities. HappiLiv
+            Hostels provides well-maintained rooms and modern amenities at
+            budget-friendly pricing.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-y-6 gap-x-20 text-gray-700 text-lg font-medium">
@@ -127,12 +126,12 @@ export default function GirlsHostelKengeri() {
 
             <div className="flex items-start gap-3">
               <span className="mt-1">•</span>
-              <span>High-speed WiFi connectivity</span>
+              <span>High-speed WiFi</span>
             </div>
 
             <div className="flex items-start justify-end gap-3 text-right">
               <span className="mt-1">•</span>
-              <span>Daily housekeeping services</span>
+              <span>Daily housekeeping</span>
             </div>
 
             <div className="flex items-start gap-3">
@@ -147,7 +146,7 @@ export default function GirlsHostelKengeri() {
 
             <div className="flex items-start gap-3">
               <span className="mt-1">•</span>
-              <span>Reliable power backup</span>
+              <span>Power backup</span>
             </div>
 
           </div>
@@ -171,28 +170,33 @@ export default function GirlsHostelKengeri() {
 
           <p className="text-gray-600 mb-6">
             Healthy and hygienic food is an important part of student life.
-            We provide freshly prepared meals in a clean and hygienic
-            environment to ensure students enjoy quality food every day.
+            We provide fresh meals prepared in clean kitchen facilities to
+            ensure residents enjoy nutritious and balanced food every day.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-y-6 gap-x-20 text-gray-700 text-lg font-medium">
 
             <div className="flex items-start gap-3">
               <span className="mt-1">•</span>
-              <span>Fresh vegetarian and non-vegetarian meals</span>
+              <span>Vegetarian and non-vegetarian meal options</span>
             </div>
 
             <div className="flex items-start justify-end gap-3 text-right">
               <span className="mt-1">•</span>
-              <span>Hygienic kitchen and dining area</span>
+              <span>Hygienic kitchen environment</span>
             </div>
 
             <div className="flex items-start gap-3">
               <span className="mt-1">•</span>
-              <span>Balanced meal options</span>
+              <span>Freshly prepared meals</span>
             </div>
 
             <div className="flex items-start justify-end gap-3 text-right">
+              <span className="mt-1">•</span>
+              <span>Clean dining spaces</span>
+            </div>
+
+            <div className="flex items-start gap-3">
               <span className="mt-1">•</span>
               <span>Quality-focused meal preparation</span>
             </div>
@@ -213,46 +217,82 @@ export default function GirlsHostelKengeri() {
         {/* SECTION 4 */}
         <div>
           <h2 className="text-2xl font-semibold mb-4">
-            Prime Location with Excellent Connectivity
+            Convenient Location with Excellent Connectivity
           </h2>
 
           <p className="text-gray-600 mb-6">
-            Our hostel is strategically located in Kengeri Bangalore with
-            excellent connectivity to educational institutions and essential
-            services.
+            Our hostel is strategically located in Kengeri Bangalore,
+            offering easy access to educational institutions,
+            transportation facilities, supermarkets, restaurants,
+            and healthcare services.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-y-6 gap-x-20 text-gray-700 text-lg font-medium">
 
             <div className="flex items-start gap-3">
               <span className="mt-1">•</span>
-              <span>Christ University Kengeri Campus</span>
+              <span>Easy access to Christ University Kengeri Campus</span>
             </div>
 
             <div className="flex items-start justify-end gap-3 text-right">
               <span className="mt-1">•</span>
-              <span>Public transportation facilities</span>
+              <span>Nearby bus and transport facilities</span>
             </div>
 
             <div className="flex items-start gap-3">
               <span className="mt-1">•</span>
-              <span>Restaurants and cafes</span>
+              <span>Close to supermarkets and stores</span>
             </div>
 
             <div className="flex items-start justify-end gap-3 text-right">
               <span className="mt-1">•</span>
-              <span>Supermarkets and medical stores</span>
+              <span>Access to restaurants and cafes</span>
             </div>
 
             <div className="flex items-start gap-3">
               <span className="mt-1">•</span>
-              <span>Student-friendly surroundings</span>
+              <span>Student-friendly neighborhood</span>
             </div>
 
           </div>
         </div>
 
-        {/* FAQ SECTION */}
+        {/* SECTION 5 */}
+        <div>
+          <h2 className="text-2xl font-semibold mb-4">
+            Why Students Choose HappiLiv Hostels
+          </h2>
+
+          <p className="text-gray-600 mb-6">
+            At HappiLiv Hostels, we understand the needs of students living
+            away from home. Our goal is to create a comfortable, secure,
+            and supportive environment that helps students focus on academics
+            and personal growth.
+          </p>
+        </div>
+
+        <WhyChoose />
+
+        {/* SECTION 6 */}
+        <div>
+          <h2 className="text-2xl font-semibold mb-4">
+            Comfortable Student Living Experience
+          </h2>
+
+          <p className="text-gray-600 leading-relaxed">
+            Moving to a new city can be challenging for students. Our hostel
+            is designed to provide a home-like environment where students can
+            feel comfortable, safe, and supported throughout their educational
+            journey.
+          </p>
+
+          <p className="text-gray-600 leading-relaxed mt-4">
+            From spacious rooms to study-friendly surroundings, every facility
+            is planned to improve the overall student living experience.
+          </p>
+        </div>
+
+        {/* FAQ */}
         <div>
           <h2 className="text-2xl font-semibold mb-6">
             Frequently Asked Questions
@@ -266,19 +306,19 @@ export default function GirlsHostelKengeri() {
                 a: "HappiLiv Hostels offers safe, affordable, and fully furnished accommodation for students in Kengeri Bangalore.",
               },
               {
-                q: "Do you provide food facilities for students?",
+                q: "Do you provide food facilities in the hostel?",
                 a: "Yes, we provide hygienic vegetarian and non-vegetarian meals for students.",
               },
               {
-                q: "Is the hostel safe for students?",
-                a: "Yes, our hostel includes CCTV surveillance, secure access systems, and dedicated hostel support staff.",
+                q: "Is the hostel safe for female students?",
+                a: "Yes, our hostel includes CCTV surveillance, secure access systems, and dedicated support staff for student safety.",
               },
               {
-                q: "Is WiFi available in the hostel?",
+                q: "Is WiFi available for students?",
                 a: "Yes, high-speed WiFi is available for all residents.",
               },
               {
-                q: "Is the hostel near Christ University?",
+                q: "Is the hostel located near Christ University?",
                 a: "Yes, our hostel is conveniently located near Christ University Kengeri campus.",
               },
             ].map((faq, i) => (
@@ -344,12 +384,12 @@ export default function GirlsHostelKengeri() {
               </div>
 
             </div>
+
           </div>
 
         </div>
       </section>
 
-      <WhyChoose />
       <ContactFormSection />
     </>
   );

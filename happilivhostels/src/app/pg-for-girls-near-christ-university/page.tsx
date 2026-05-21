@@ -26,23 +26,23 @@ export default function PgForGirlsChristUniversity() {
           </h1>
 
           <p className="text-gray-600 leading-relaxed mb-4">
-            Finding the right PG accommodation is important for students
-            relocating to Bangalore for higher education. If you are searching
-            for a PG for girls near Christ University, HappiLiv Hostels offers
-            a comfortable, affordable, and student-friendly living environment
-            designed specifically for students.
+            Finding the right PG accommodation is important for students moving
+            to Bangalore for higher education. If you are searching for a PG
+            for girls near Christ University, HappiLiv Hostels offers a safe,
+            affordable, and comfortable living environment designed specifically
+            for students.
           </p>
 
           <p className="text-gray-600 leading-relaxed mb-4">
-            Conveniently located near Christ University Kengeri campus, our
+            Located conveniently near Christ University Kengeri campus, our
             girls PG provides easy access to colleges, transportation
-            facilities, restaurants, supermarkets, and essential services.
+            facilities, restaurants, supermarkets, and other daily essentials.
           </p>
 
           <p className="text-gray-600 leading-relaxed">
-            With furnished rooms, hygienic food, modern amenities, and reliable
-            facilities, we ensure students enjoy a convenient and stress-free
-            stay throughout their academic journey.
+            With modern amenities, hygienic food, and a secure atmosphere, we
+            ensure students enjoy a comfortable and stress-free stay throughout
+            their academic journey.
           </p>
         </div>
 
@@ -63,10 +63,10 @@ export default function PgForGirlsChristUniversity() {
           </h2>
 
           <p className="text-gray-600 mb-6">
-            Safety and comfort are essential when choosing student
-            accommodation. At HappiLiv Hostels, we maintain a secure and
-            peaceful environment where students can stay confidently and focus
-            on academics.
+            Safety is one of the biggest concerns for students and parents when
+            choosing accommodation. At HappiLiv Hostels, we maintain a secure
+            and student-friendly environment where residents can stay
+            comfortably and confidently.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-y-6 gap-x-20 text-gray-700 text-lg font-medium">
@@ -88,7 +88,7 @@ export default function PgForGirlsChristUniversity() {
 
             <div className="flex items-start justify-end gap-3 text-right">
               <span className="mt-1">•</span>
-              <span>Safe and student-friendly surroundings</span>
+              <span>Safe and peaceful surroundings</span>
             </div>
 
             <div className="flex items-start gap-3">
@@ -102,14 +102,14 @@ export default function PgForGirlsChristUniversity() {
         {/* SECTION 2 */}
         <div>
           <h2 className="text-2xl font-semibold mb-4">
-            Affordable PG with Modern Amenities
+            Affordable PG for Girls Near Christ University
           </h2>
 
           <p className="text-gray-600 mb-6">
             Students often search for PG accommodation that combines
-            affordability with comfort and essential facilities. HappiLiv
-            Hostels offers well-maintained rooms and modern amenities at
-            student-friendly pricing.
+            affordability with comfort and convenience. HappiLiv Hostels offers
+            well-maintained rooms and modern facilities at student-friendly
+            pricing.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-y-6 gap-x-20 text-gray-700 text-lg font-medium">
@@ -126,7 +126,7 @@ export default function PgForGirlsChristUniversity() {
 
             <div className="flex items-start gap-3">
               <span className="mt-1">•</span>
-              <span>High-speed WiFi connectivity</span>
+              <span>High-speed WiFi</span>
             </div>
 
             <div className="flex items-start justify-end gap-3 text-right">
@@ -136,7 +136,7 @@ export default function PgForGirlsChristUniversity() {
 
             <div className="flex items-start gap-3">
               <span className="mt-1">•</span>
-              <span>Laundry facilities</span>
+              <span>Laundry support</span>
             </div>
 
             <div className="flex items-start justify-end gap-3 text-right">
@@ -169,31 +169,31 @@ export default function PgForGirlsChristUniversity() {
           </h2>
 
           <p className="text-gray-600 mb-6">
-            Good food and hygiene are important parts of student life. We
-            provide freshly prepared meals in a clean and hygienic environment
-            to ensure students enjoy healthy and nutritious food every day.
+            Healthy and hygienic food is an essential part of student life. We
+            provide fresh meals prepared in a clean and hygienic environment to
+            ensure students enjoy nutritious food every day.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-y-6 gap-x-20 text-gray-700 text-lg font-medium">
 
             <div className="flex items-start gap-3">
               <span className="mt-1">•</span>
-              <span>Fresh vegetarian and non-vegetarian meals</span>
+              <span>Vegetarian and non-vegetarian meal options</span>
             </div>
 
             <div className="flex items-start justify-end gap-3 text-right">
               <span className="mt-1">•</span>
-              <span>Hygienic kitchen and dining facilities</span>
+              <span>Freshly prepared meals</span>
             </div>
 
             <div className="flex items-start gap-3">
               <span className="mt-1">•</span>
-              <span>Balanced meal options</span>
+              <span>Hygienic kitchen and dining area</span>
             </div>
 
             <div className="flex items-start justify-end gap-3 text-right">
               <span className="mt-1">•</span>
-              <span>Quality-focused food preparation</span>
+              <span>Balanced and nutritious food</span>
             </div>
 
           </div>
@@ -203,7 +203,7 @@ export default function PgForGirlsChristUniversity() {
         <div className="relative w-full h-[300px] rounded-2xl overflow-hidden">
           <Image
             src="/boys/room1.webp"
-            alt="Girls Hostel Facilities"
+            alt="Student Accommodation"
             fill
             className="object-cover"
           />
@@ -212,12 +212,12 @@ export default function PgForGirlsChristUniversity() {
         {/* SECTION 4 */}
         <div>
           <h2 className="text-2xl font-semibold mb-4">
-            Prime Location Near Christ University Kengeri
+            Convenient Location Near Christ University Kengeri
           </h2>
 
           <p className="text-gray-600 mb-6">
-            One of the biggest advantages of staying at HappiLiv Hostels is our
-            convenient location near Christ University Kengeri campus and
+            One of the biggest advantages of our PG accommodation is its
+            strategic location near Christ University Kengeri campus and
             surrounding educational institutions.
           </p>
 
@@ -245,13 +245,89 @@ export default function PgForGirlsChristUniversity() {
 
             <div className="flex items-start gap-3">
               <span className="mt-1">•</span>
-              <span>Student-friendly surroundings</span>
+              <span>Student-friendly environment</span>
             </div>
 
           </div>
         </div>
 
-        {/* FAQ SECTION */}
+        {/* SECTION 5 */}
+        <div>
+          <h2 className="text-2xl font-semibold mb-4">
+            Why Choose HappiLiv Hostels?
+          </h2>
+
+          <p className="text-gray-600 mb-6">
+            At HappiLiv Hostels, we understand the daily needs of students
+            living away from home. Our goal is to provide a welcoming and
+            comfortable environment that supports both academics and personal
+            well-being.
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-y-6 gap-x-20 text-gray-700 text-lg font-medium">
+
+            <div className="flex items-start gap-3">
+              <span className="mt-1">•</span>
+              <span>Safe and secure accommodation</span>
+            </div>
+
+            <div className="flex items-start justify-end gap-3 text-right">
+              <span className="mt-1">•</span>
+              <span>Affordable pricing options</span>
+            </div>
+
+            <div className="flex items-start gap-3">
+              <span className="mt-1">•</span>
+              <span>Prime location near Christ University</span>
+            </div>
+
+            <div className="flex items-start justify-end gap-3 text-right">
+              <span className="mt-1">•</span>
+              <span>Student-friendly atmosphere</span>
+            </div>
+
+            <div className="flex items-start gap-3">
+              <span className="mt-1">•</span>
+              <span>Modern facilities and amenities</span>
+            </div>
+
+            <div className="flex items-start justify-end gap-3 text-right">
+              <span className="mt-1">•</span>
+              <span>Hygienic food and clean surroundings</span>
+            </div>
+
+            <div className="flex items-start gap-3">
+              <span className="mt-1">•</span>
+              <span>Reliable management support</span>
+            </div>
+
+          </div>
+        </div>
+
+        <WhyChoose />
+
+        {/* SECTION 6 */}
+        <div>
+          <h2 className="text-2xl font-semibold mb-4">
+            Comfortable Student Living Experience
+          </h2>
+
+          <p className="text-gray-600 leading-relaxed">
+            Moving to a new city can be overwhelming for students, especially
+            when living away from home for the first time. Our PG accommodation
+            is designed to provide a home-like environment where students can
+            feel comfortable, safe, and supported throughout their educational
+            journey.
+          </p>
+
+          <p className="text-gray-600 leading-relaxed mt-4">
+            From study-friendly spaces to essential amenities, every aspect of
+            our accommodation is planned to improve student comfort and
+            convenience.
+          </p>
+        </div>
+
+        {/* FAQ */}
         <div>
           <h2 className="text-2xl font-semibold mb-6">
             Frequently Asked Questions
@@ -269,8 +345,8 @@ export default function PgForGirlsChristUniversity() {
                 a: "Yes, we provide hygienic vegetarian and non-vegetarian meals for students.",
               },
               {
-                q: "Is the PG safe for students?",
-                a: "Yes, our PG includes CCTV surveillance, secure access systems, and dedicated hostel support staff.",
+                q: "Is the PG safe for female students?",
+                a: "Yes, our PG includes CCTV surveillance, secure access systems, and dedicated support staff.",
               },
               {
                 q: "Is WiFi available for students?",
@@ -348,7 +424,6 @@ export default function PgForGirlsChristUniversity() {
         </div>
       </section>
 
-      <WhyChoose />
       <ContactFormSection />
     </>
   );
