@@ -64,51 +64,40 @@ export default function BoysHostelChristUniversity() {
           </p>
 
            
-<div className="text-gray-600">
+<div className="grid grid-cols-1 md:grid-cols-2 gap-y-6 text-gray-700 text-lg font-medium">
 
-  {/* TOP ROW */}
-  <div className="flex flex-col md:flex-row justify-between gap-6">
-
-    {/* LEFT COLUMN */}
-    <div className="space-y-5">
-
-      <div className="flex items-start gap-3">
-        <span className="mt-1">•</span>
-        <span>24/7 CCTV surveillance</span>
-      </div>
-
-      <div className="flex items-start gap-3">
-        <span className="mt-1">•</span>
-        <span>Dedicated hostel support staff</span>
-      </div>
-
-    </div>
-
-    {/* RIGHT COLUMN */}
-    <div className="space-y-5 text-left md:text-right">
-
-      <div className="flex items-start justify-start md:justify-end gap-3">
-        <span className="mt-1">•</span>
-        <span>Secure entry access</span>
-      </div>
-
-      <div className="flex items-start justify-start md:justify-end gap-3">
-        <span className="mt-1">•</span>
-        <span>Safe and student-friendly atmosphere</span>
-      </div>
-
-    </div>
-
+  {/* LEFT COLUMN */}
+  <div className="flex items-start gap-3">
+    <span className="mt-1">•</span>
+    <span>24/7 CCTV surveillance</span>
   </div>
 
-  {/* CENTER ITEM */}
-  <div className="flex justify-center mt-8">
-    <div className="flex items-start gap-3">
-      <span className="mt-1">•</span>
-      <span>Regular monitoring and maintenance</span>
-    </div>
+  {/* RIGHT COLUMN */}
+  <div className="flex items-start justify-end gap-3 text-right">
+    <span className="mt-1">•</span>
+    <span>Secure entry access</span>
   </div>
 
+  {/* LEFT COLUMN */}
+  <div className="flex items-start gap-3">
+    <span className="mt-1">•</span>
+    <span>Dedicated hostel support staff</span>
+  </div>
+
+  {/* RIGHT COLUMN */}
+  <div className="flex items-start justify-end gap-3 text-right">
+    <span className="mt-1">•</span>
+    <span>Safe and student-friendly atmosphere</span>
+  </div>
+
+</div>
+
+{/* CENTER ITEM */}
+<div className="flex justify-center mt-8 text-gray-700 text-lg font-medium">
+  <div className="flex items-start gap-3">
+    <span className="mt-1">•</span>
+    <span>Regular monitoring and maintenance</span>
+  </div>
 </div>
 
         {/* SECTION 2 */}
