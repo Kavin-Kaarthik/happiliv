@@ -65,32 +65,44 @@ export default function BoysHostelChristUniversity() {
 
           <div className="text-gray-600">
 
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-y-5 gap-x-16">
+  <div className="text-gray-600">
 
-    <div className="flex items-start gap-3">
-      <span className="mt-1">•</span>
-      <span>24/7 CCTV surveillance</span>
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-y-5">
+
+    {/* LEFT SIDE */}
+    <div className="space-y-5">
+
+      <div className="flex items-start gap-3">
+        <span className="mt-1">•</span>
+        <span>24/7 CCTV surveillance</span>
+      </div>
+
+      <div className="flex items-start gap-3">
+        <span className="mt-1">•</span>
+        <span>Dedicated hostel support staff</span>
+      </div>
+
     </div>
 
-    <div className="flex items-start gap-3">
-      <span className="mt-1">•</span>
-      <span>Secure entry access</span>
-    </div>
+    {/* RIGHT SIDE */}
+    <div className="space-y-5 md:ml-auto">
 
-    <div className="flex items-start gap-3">
-      <span className="mt-1">•</span>
-      <span>Dedicated hostel support staff</span>
-    </div>
+      <div className="flex items-start gap-3">
+        <span className="mt-1">•</span>
+        <span>Secure entry access</span>
+      </div>
 
-    <div className="flex items-start gap-3">
-      <span className="mt-1">•</span>
-      <span>Safe and student-friendly atmosphere</span>
+      <div className="flex items-start gap-3">
+        <span className="mt-1">•</span>
+        <span>Safe and student-friendly atmosphere</span>
+      </div>
+
     </div>
 
   </div>
 
   {/* CENTER LAST ITEM */}
-  <div className="flex justify-center mt-5">
+  <div className="flex justify-center mt-6">
     <div className="flex items-start gap-3">
       <span className="mt-1">•</span>
       <span>Regular monitoring and maintenance</span>
