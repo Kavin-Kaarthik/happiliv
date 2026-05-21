@@ -63,13 +63,13 @@ export default function BoysHostelChristUniversity() {
             academics.
           </p>
 
-          <div className="text-gray-600">
+           
+<div className="text-gray-600">
 
-  <div className="text-gray-600">
+  {/* TOP ROW */}
+  <div className="flex flex-col md:flex-row justify-between gap-6">
 
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-y-5">
-
-    {/* LEFT SIDE */}
+    {/* LEFT COLUMN */}
     <div className="space-y-5">
 
       <div className="flex items-start gap-3">
@@ -84,15 +84,15 @@ export default function BoysHostelChristUniversity() {
 
     </div>
 
-    {/* RIGHT SIDE */}
-    <div className="space-y-5 md:ml-auto">
+    {/* RIGHT COLUMN */}
+    <div className="space-y-5 text-left md:text-right">
 
-      <div className="flex items-start gap-3">
+      <div className="flex items-start justify-start md:justify-end gap-3">
         <span className="mt-1">•</span>
         <span>Secure entry access</span>
       </div>
 
-      <div className="flex items-start gap-3">
+      <div className="flex items-start justify-start md:justify-end gap-3">
         <span className="mt-1">•</span>
         <span>Safe and student-friendly atmosphere</span>
       </div>
@@ -101,8 +101,8 @@ export default function BoysHostelChristUniversity() {
 
   </div>
 
-  {/* CENTER LAST ITEM */}
-  <div className="flex justify-center mt-6">
+  {/* CENTER ITEM */}
+  <div className="flex justify-center mt-8">
     <div className="flex items-start gap-3">
       <span className="mt-1">•</span>
       <span>Regular monitoring and maintenance</span>
