@@ -63,43 +63,41 @@ export default function BoysHostelChristUniversity() {
             academics.
           </p>
 
-          <div className="space-y-4 text-gray-600">
+          <div className="text-gray-600">
 
-            {/* 2x2 GRID */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-y-5 gap-x-16">
 
-              <div className="flex items-center gap-2">
-                <span>•</span>
-                <span>24/7 CCTV surveillance</span>
-              </div>
+    <div className="flex items-start gap-3">
+      <span className="mt-1">•</span>
+      <span>24/7 CCTV surveillance</span>
+    </div>
 
-              <div className="flex items-center gap-2">
-                <span>•</span>
-                <span>Secure entry access</span>
-              </div>
+    <div className="flex items-start gap-3">
+      <span className="mt-1">•</span>
+      <span>Secure entry access</span>
+    </div>
 
-              <div className="flex items-center gap-2">
-                <span>•</span>
-                <span>Dedicated hostel support staff</span>
-              </div>
+    <div className="flex items-start gap-3">
+      <span className="mt-1">•</span>
+      <span>Dedicated hostel support staff</span>
+    </div>
 
-              <div className="flex items-center gap-2">
-                <span>•</span>
-                <span>Safe and student-friendly atmosphere</span>
-              </div>
+    <div className="flex items-start gap-3">
+      <span className="mt-1">•</span>
+      <span>Safe and student-friendly atmosphere</span>
+    </div>
 
-            </div>
+  </div>
 
-            {/* CENTER LAST POINT */}
-            <div className="flex justify-center">
-              <div className="flex items-center gap-2">
-                <span>•</span>
-                <span>Regular monitoring and maintenance</span>
-              </div>
-            </div>
+  {/* CENTER LAST ITEM */}
+  <div className="flex justify-center mt-5">
+    <div className="flex items-start gap-3">
+      <span className="mt-1">•</span>
+      <span>Regular monitoring and maintenance</span>
+    </div>
+  </div>
 
-          </div>
-        </div>
+</div>
 
         {/* SECTION 2 */}
         <div>
