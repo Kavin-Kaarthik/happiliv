@@ -31,7 +31,7 @@ export default function BannerSection() {
         >
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[56px] 
                          text-[#002B5B] font-semibold">
-            HOSTEL For Boys
+            HOSTEL For  
           </h1>
           <p className="mt-2 text-xl sm:text-2xl font-semibold">
             Near Christ University
