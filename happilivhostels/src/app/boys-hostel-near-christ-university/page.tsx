@@ -1,6 +1,7 @@
 import Banner from "./Components/Banner";
 import Features from "./Components/Features";
 import { Metadata } from "next";
+import Link from "next/link";
 import Image from "next/image";
 
 export const metadata: Metadata = {
@@ -32,10 +33,16 @@ export default function BoysHostelChristUniversity() {
             environment designed specifically for students.
           </p>
 
-          <p className="text-gray-600 leading-relaxed">
+          <p className="text-gray-600 leading-relaxed mb-4">
             Conveniently located near Christ University Kengeri campus, our
             hostel provides easy access to colleges, transportation facilities,
             restaurants, supermarkets, and other essential services.
+          </p>
+
+          <p className="text-gray-600 leading-relaxed">
+            With modern amenities, furnished rooms, hygienic food, and reliable
+            facilities, we ensure students enjoy a convenient and stress-free
+            stay throughout their academic journey.
           </p>
         </div>
 
@@ -70,8 +77,8 @@ export default function BoysHostelChristUniversity() {
             </div>
 
             <div className="flex items-start justify-end gap-3 text-right">
-              <span>Secure entry access</span>
               <span className="mt-1">•</span>
+              <span>Secure entry access</span>
             </div>
 
             <div className="flex items-start gap-3">
@@ -80,8 +87,8 @@ export default function BoysHostelChristUniversity() {
             </div>
 
             <div className="flex items-start justify-end gap-3 text-right">
-              <span>Safe and student-friendly atmosphere</span>
               <span className="mt-1">•</span>
+              <span>Safe and student-friendly atmosphere</span>
             </div>
 
             <div className="flex items-start gap-3">
@@ -99,8 +106,10 @@ export default function BoysHostelChristUniversity() {
           </h2>
 
           <p className="text-gray-600 mb-6">
-            HappiLiv Hostels provides well-maintained rooms and modern amenities
-            at student-friendly pricing.
+            Students often look for accommodation that combines affordability
+            with essential facilities and comfort. HappiLiv Hostels provides
+            well-maintained rooms and modern amenities at student-friendly
+            pricing.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-y-6 gap-x-20 text-gray-700 text-lg font-medium">
@@ -111,8 +120,8 @@ export default function BoysHostelChristUniversity() {
             </div>
 
             <div className="flex items-start justify-end gap-3 text-right">
-              <span>Comfortable beds and storage spaces</span>
               <span className="mt-1">•</span>
+              <span>Comfortable beds and storage spaces</span>
             </div>
 
             <div className="flex items-start gap-3">
@@ -121,8 +130,8 @@ export default function BoysHostelChristUniversity() {
             </div>
 
             <div className="flex items-start justify-end gap-3 text-right">
-              <span>Daily housekeeping services</span>
               <span className="mt-1">•</span>
+              <span>Daily housekeeping services</span>
             </div>
 
             <div className="flex items-start gap-3">
@@ -131,8 +140,8 @@ export default function BoysHostelChristUniversity() {
             </div>
 
             <div className="flex items-start justify-end gap-3 text-right">
-              <span>Hygienic washrooms</span>
               <span className="mt-1">•</span>
+              <span>Hygienic washrooms</span>
             </div>
 
             <div className="flex items-start gap-3">
@@ -174,8 +183,8 @@ export default function BoysHostelChristUniversity() {
             </div>
 
             <div className="flex items-start justify-end gap-3 text-right">
-              <span>Hygienic kitchen and dining facilities</span>
               <span className="mt-1">•</span>
+              <span>Hygienic kitchen and dining facilities</span>
             </div>
 
             <div className="flex items-start gap-3">
@@ -184,8 +193,8 @@ export default function BoysHostelChristUniversity() {
             </div>
 
             <div className="flex items-start justify-end gap-3 text-right">
-              <span>Quality-focused meal preparation</span>
               <span className="mt-1">•</span>
+              <span>Quality-focused meal preparation</span>
             </div>
 
           </div>
@@ -209,7 +218,8 @@ export default function BoysHostelChristUniversity() {
 
           <p className="text-gray-600 mb-6">
             One of the biggest advantages of staying at HappiLiv Hostels is our
-            convenient location near Christ University Kengeri campus.
+            convenient location near Christ University Kengeri campus and
+            surrounding educational institutions.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-y-6 gap-x-20 text-gray-700 text-lg font-medium">
@@ -220,8 +230,8 @@ export default function BoysHostelChristUniversity() {
             </div>
 
             <div className="flex items-start justify-end gap-3 text-right">
-              <span>Public transportation facilities</span>
               <span className="mt-1">•</span>
+              <span>Public transportation facilities</span>
             </div>
 
             <div className="flex items-start gap-3">
@@ -230,8 +240,8 @@ export default function BoysHostelChristUniversity() {
             </div>
 
             <div className="flex items-start justify-end gap-3 text-right">
-              <span>Supermarkets and medical stores</span>
               <span className="mt-1">•</span>
+              <span>Supermarkets and medical stores</span>
             </div>
 
             <div className="flex items-start gap-3">
@@ -242,16 +252,49 @@ export default function BoysHostelChristUniversity() {
           </div>
         </div>
 
-        {/* FEATURES */}
+        {/* SECTION 5 */}
+        <div>
+          <h2 className="text-2xl font-semibold mb-4">
+            Why Choose HappiLiv Hostels?
+          </h2>
+
+          <p className="text-gray-600 mb-6">
+            At HappiLiv Hostels, we understand the daily needs of students
+            living away from home. Our goal is to provide a comfortable,
+            affordable, and supportive living environment that helps students
+            focus on academics and personal growth.
+          </p>
+
+          
+
         <Features />
 
-        {/* FAQ SECTION */}
+        {/* SECTION 6 */}
+        <div>
+          <h2 className="text-2xl font-semibold mb-4">
+            Comfortable Student Living Experience
+          </h2>
+
+          <p className="text-gray-600 leading-relaxed">
+            Moving to a new city for education can be challenging, especially
+            for students living away from home for the first time. Our hostel is
+            designed to create a welcoming and stress-free environment where
+            students can feel comfortable and supported throughout their
+            academic journey.
+          </p>
+        </div>
+
+        {/* CTA */}
+        
+
+        {/* FAQ */}
         <div>
           <h2 className="text-2xl font-semibold mb-6">
             Frequently Asked Questions
           </h2>
 
           <div className="space-y-4">
+
             {[
               {
                 q: "Which is the best boys hostel near Christ University?",
@@ -287,6 +330,7 @@ export default function BoysHostelChristUniversity() {
                 </p>
               </div>
             ))}
+
           </div>
         </div>
 
