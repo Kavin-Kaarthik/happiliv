@@ -15,6 +15,7 @@ export default function BoysHostelChristUniversity() {
     <>
       <Banner />
 
+      {/* MAIN CONTENT */}
       <section className="px-6 md:px-16 py-12 space-y-12">
 
         {/* H1 */}
@@ -68,7 +69,7 @@ export default function BoysHostelChristUniversity() {
               <span>24/7 CCTV surveillance</span>
             </div>
 
-            <div className="flex items-start justify-end gap-3 text-right">
+            <div className="flex items-start gap-3 md:justify-self-end">
               <span className="mt-1">•</span>
               <span>Secure entry access</span>
             </div>
@@ -78,7 +79,7 @@ export default function BoysHostelChristUniversity() {
               <span>Dedicated hostel support staff</span>
             </div>
 
-            <div className="flex items-start justify-end gap-3 text-right">
+            <div className="flex items-start gap-3 md:justify-self-end">
               <span className="mt-1">•</span>
               <span>Safe and student-friendly atmosphere</span>
             </div>
@@ -109,7 +110,7 @@ export default function BoysHostelChristUniversity() {
               <span>Fully furnished rooms</span>
             </div>
 
-            <div className="flex items-start justify-end gap-3 text-right">
+            <div className="flex items-start gap-3 md:justify-self-end">
               <span className="mt-1">•</span>
               <span>Comfortable beds and storage spaces</span>
             </div>
@@ -119,7 +120,7 @@ export default function BoysHostelChristUniversity() {
               <span>High-speed WiFi connectivity</span>
             </div>
 
-            <div className="flex items-start justify-end gap-3 text-right">
+            <div className="flex items-start gap-3 md:justify-self-end">
               <span className="mt-1">•</span>
               <span>Daily housekeeping services</span>
             </div>
@@ -129,7 +130,7 @@ export default function BoysHostelChristUniversity() {
               <span>Laundry facilities</span>
             </div>
 
-            <div className="flex items-start justify-end gap-3 text-right">
+            <div className="flex items-start gap-3 md:justify-self-end">
               <span className="mt-1">•</span>
               <span>Hygienic washrooms</span>
             </div>
@@ -160,7 +161,9 @@ export default function BoysHostelChristUniversity() {
 
           <p className="text-gray-600 mb-6">
             Good food and hygiene play an important role in maintaining a
-            healthy student lifestyle.
+            healthy student lifestyle. We provide fresh and nutritious meals
+            prepared in a clean and hygienic environment to ensure students
+            enjoy quality food every day.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-y-6 gap-x-20 text-gray-700 text-lg font-medium">
@@ -170,7 +173,7 @@ export default function BoysHostelChristUniversity() {
               <span>Fresh vegetarian and non-vegetarian meals</span>
             </div>
 
-            <div className="flex items-start justify-end gap-3 text-right">
+            <div className="flex items-start gap-3 md:justify-self-end">
               <span className="mt-1">•</span>
               <span>Hygienic kitchen and dining facilities</span>
             </div>
@@ -180,7 +183,7 @@ export default function BoysHostelChristUniversity() {
               <span>Balanced meal options</span>
             </div>
 
-            <div className="flex items-start justify-end gap-3 text-right">
+            <div className="flex items-start gap-3 md:justify-self-end">
               <span className="mt-1">•</span>
               <span>Quality-focused meal preparation</span>
             </div>
@@ -216,7 +219,7 @@ export default function BoysHostelChristUniversity() {
               <span>Christ University Kengeri Campus</span>
             </div>
 
-            <div className="flex items-start justify-end gap-3 text-right">
+            <div className="flex items-start gap-3 md:justify-self-end">
               <span className="mt-1">•</span>
               <span>Public transportation facilities</span>
             </div>
@@ -226,7 +229,7 @@ export default function BoysHostelChristUniversity() {
               <span>Restaurants and cafes</span>
             </div>
 
-            <div className="flex items-start justify-end gap-3 text-right">
+            <div className="flex items-start gap-3 md:justify-self-end">
               <span className="mt-1">•</span>
               <span>Supermarkets and medical stores</span>
             </div>
@@ -247,7 +250,9 @@ export default function BoysHostelChristUniversity() {
 
           <p className="text-gray-600 mb-6">
             At HappiLiv Hostels, we understand the daily needs of students
-            living away from home.
+            living away from home. Our goal is to provide a comfortable,
+            affordable, and supportive living environment that helps students
+            focus on academics and personal growth.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-y-6 gap-x-20 text-gray-700 text-lg font-medium">
@@ -257,7 +262,7 @@ export default function BoysHostelChristUniversity() {
               <span>Safe and secure accommodation</span>
             </div>
 
-            <div className="flex items-start justify-end gap-3 text-right">
+            <div className="flex items-start gap-3 md:justify-self-end">
               <span className="mt-1">•</span>
               <span>Affordable pricing options</span>
             </div>
@@ -267,7 +272,7 @@ export default function BoysHostelChristUniversity() {
               <span>Prime location near Christ University</span>
             </div>
 
-            <div className="flex items-start justify-end gap-3 text-right">
+            <div className="flex items-start gap-3 md:justify-self-end">
               <span className="mt-1">•</span>
               <span>Student-friendly atmosphere</span>
             </div>
@@ -277,7 +282,7 @@ export default function BoysHostelChristUniversity() {
               <span>Modern amenities and facilities</span>
             </div>
 
-            <div className="flex items-start justify-end gap-3 text-right">
+            <div className="flex items-start gap-3 md:justify-self-end">
               <span className="mt-1">•</span>
               <span>Hygienic food and clean surroundings</span>
             </div>
@@ -290,8 +295,67 @@ export default function BoysHostelChristUniversity() {
           </div>
         </div>
 
+        {/* FEATURES */}
         <Features />
 
+        {/* SECTION 6 */}
+        <div>
+          <h2 className="text-2xl font-semibold mb-4">
+            Comfortable Student Living Experience
+          </h2>
+
+          <p className="text-gray-600 leading-relaxed">
+            Moving to a new city for education can be challenging, especially
+            for students living away from home for the first time. Our hostel is
+            designed to create a welcoming and stress-free environment.
+          </p>
+        </div>
+
+      </section>
+
+      {/* MAP SECTION */}
+      <section className="w-full bg-white pb-16 px-6 md:px-16">
+        <div className="grid grid-cols-1 lg:grid-cols-[60%_40%] gap-10 items-stretch">
+
+          {/* GOOGLE MAP */}
+          <div className="h-full min-h-[450px]">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.709270117793!2d77.43257937358699!3d12.862045017273731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae38c490000001%3A0xaebe47889363e5de!2sHappiLiv%20Hostel!5e0!3m2!1sen!2sin!4v1770802434571!5m2!1sen!2sin"
+              loading="lazy"
+              allowFullScreen
+              referrerPolicy="no-referrer-when-downgrade"
+              className="w-full h-full rounded-2xl border-0"
+            ></iframe>
+          </div>
+
+          {/* CONTACT CARD */}
+          <div className="bg-blue-600 rounded-2xl p-8 text-white flex flex-col justify-center min-h-[450px]">
+            <h3 className="text-2xl font-semibold mb-6">
+              Contact HappiLiv Hostels
+            </h3>
+
+            <div className="space-y-5">
+
+              <div className="bg-white/20 p-4 rounded-xl">
+                <p className="font-semibold mb-1">Phone</p>
+                <p>+91 63630 98384</p>
+                <p>+91 63661 24184</p>
+              </div>
+
+              <div className="bg-white/20 p-4 rounded-xl">
+                <p className="font-semibold mb-1">WhatsApp</p>
+                <p>+91 78928 81368</p>
+              </div>
+
+              <div className="bg-white/20 p-4 rounded-xl">
+                <p className="font-semibold mb-1">Email</p>
+                <p>happilivhostels@gmail.com</p>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
       </section>
     </>
   );
