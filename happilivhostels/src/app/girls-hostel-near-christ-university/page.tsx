@@ -1,18 +1,33 @@
 import BannerSection from "./Components/Banner";
 import ContactFormSection from "./Components/ContactSection";
 import WhyChoose from "./Components/Why";
-import Link from "next/link";
 import { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
   title:
-    "Girls Hostel Near Christ University | Safe & Affordable Student Accommodation",
+    "PG for Girls Near Christ University | Safe & Affordable Girls PG Accommodation",
   description:
-    "Looking for a girls hostel near Christ University? Discover safe, affordable, and comfortable accommodation with food, WiFi, and modern facilities near Christ University, Bangalore.",
+    "Looking for a PG for girls near Christ University? HappiLiv Hostels offers safe, affordable, and fully furnished PG accommodation with food, WiFi, and modern amenities for students.",
 };
 
-export default function GirlsBestHostels() {
+export default function PgForGirlsChristUniversity() {
+  const renderList = (items: string[]) => (
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-y-6 gap-x-20 text-gray-700 text-lg font-medium">
+      {items.map((item, i) => (
+        <div
+          key={i}
+          className={`flex items-start gap-3 ${
+            i % 2 !== 0 ? "md:justify-self-end md:text-right" : ""
+          }`}
+        >
+          <span className="mt-1 flex-shrink-0">•</span>
+          <span>{item}</span>
+        </div>
+      ))}
+    </div>
+  );
+
   return (
     <>
       <BannerSection />
@@ -21,24 +36,31 @@ export default function GirlsBestHostels() {
 
         <div>
           <h1 className="text-3xl md:text-4xl font-bold mb-4">
-            Girls Hostel Near Christ University
+            PG for Girls Near Christ University
           </h1>
+          <p className="text-gray-600 leading-relaxed mb-4">
+            Finding the right PG accommodation is important for students moving
+            to Bangalore for higher education. If you are searching for a PG
+            for girls near Christ University, HappiLiv Hostels offers a safe,
+            affordable, and comfortable living environment designed specifically
+            for students.
+          </p>
+          <p className="text-gray-600 leading-relaxed mb-4">
+            Located conveniently near Christ University Kengeri campus, our
+            girls PG provides easy access to colleges, transportation
+            facilities, restaurants, supermarkets, and other daily essentials.
+          </p>
           <p className="text-gray-600 leading-relaxed">
-            Finding the right accommodation plays an important role in every
-            student's academic journey. If you are searching for a safe,
-            comfortable, and affordable girls hostel near Christ University,
-            HappiLiv Hostels offers the perfect living space designed
-            specifically for students. Conveniently located near Christ
-            University and surrounding educational hubs, our hostel provides
-            a peaceful and student-friendly environment with modern amenities,
-            hygienic facilities, and secure accommodation.
+            With modern amenities, hygienic food, and a secure atmosphere, we
+            ensure students enjoy a comfortable and stress-free stay throughout
+            their academic journey.
           </p>
         </div>
 
         <div className="relative w-full h-[300px] rounded-2xl overflow-hidden">
           <Image
-            src="/boys/room2.webp"
-            alt="Girls Hostel"
+            src="/boys/room3.webp"
+            alt="PG for Girls Near Christ University"
             fill
             className="object-cover"
           />
@@ -47,108 +69,82 @@ export default function GirlsBestHostels() {
         {/* SECTION 1 */}
         <div>
           <h2 className="text-2xl font-semibold mb-4">
-            Safe & Secure Girls Hostel Near Christ University
+            Safe & Secure PG Accommodation for Girls
           </h2>
-          <p className="text-gray-600 mb-6">
-            Safety is one of the biggest priorities for students and parents
-            when choosing accommodation.
-          </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-y-6 gap-x-20 text-gray-700 text-lg font-medium">
-            {[
-              "24/7 security monitoring",
-              "CCTV surveillance",
-              "Secure entry access",
-              "Dedicated wardens and support staff",
-              "Safe and student-friendly atmosphere",
-            ].map((item, i) => (
-              <div
-                key={i}
-                className={`flex items-start gap-3 ${
-                  i % 2 !== 0 ? "md:justify-end md:text-right" : ""
-                }`}
-              >
-                <span className="mt-1">•</span>
-                <span>{item}</span>
-              </div>
-            ))}
-          </div>
-        </div>
 
-        <div className="relative w-full h-[300px] rounded-2xl overflow-hidden">
-          <Image
-            src="/boys/room1.webp"
-            alt="Girls Hostel Room"
-            fill
-            className="object-cover"
-          />
+          <p className="text-gray-600 mb-6">
+            Safety is one of the biggest concerns for students and parents when
+            choosing accommodation. At HappiLiv Hostels, we maintain a secure
+            and student-friendly environment where residents can stay
+            comfortably and confidently.
+          </p>
+
+          {renderList([
+            "24/7 CCTV surveillance",
+            "Secure access systems",
+            "Dedicated wardens and support staff",
+            "Safe and peaceful surroundings",
+            "Regular monitoring and maintenance",
+          ])}
         </div>
 
         {/* SECTION 2 */}
         <div>
           <h2 className="text-2xl font-semibold mb-4">
-            Affordable Student Accommodation with Modern Amenities
+            Affordable PG for Girls Near Christ University
           </h2>
-          <p className="text-gray-600 leading-relaxed mb-6">
-            Students often look for accommodation that balances affordability
-            and comfort. Our hostel provides well-maintained rooms and
-            essential amenities at competitive pricing.
+
+          <p className="text-gray-600 mb-6">
+            Students often search for PG accommodation that combines
+            affordability with comfort and convenience. HappiLiv Hostels offers
+            well-maintained rooms and modern facilities at student-friendly
+            pricing.
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-y-6 gap-x-20 text-gray-700 text-lg font-medium">
-            {[
-              "Fully furnished rooms",
-              "Comfortable beds and storage",
-              "High-speed WiFi",
-              "Daily housekeeping",
-              "Laundry support",
-              "Hygienic washrooms",
-              "Power backup",
-            ].map((item, i) => (
-              <div
-                key={i}
-                className={`flex items-start gap-3 ${
-                  i % 2 !== 0 ? "md:justify-end md:text-right" : ""
-                }`}
-              >
-                <span className="mt-1">•</span>
-                <span>{item}</span>
-              </div>
-            ))}
-          </div>
+
+          {renderList([
+            "Fully furnished rooms",
+            "Comfortable beds and storage spaces",
+            "High-speed WiFi",
+            "Daily housekeeping services",
+            "Laundry support",
+            "Hygienic washrooms",
+            "Reliable power backup",
+          ])}
+        </div>
+
+        <div className="relative w-full h-[300px] rounded-2xl overflow-hidden">
+          <Image
+            src="/boys/room2.webp"
+            alt="Girls PG Facilities"
+            fill
+            className="object-cover"
+          />
         </div>
 
         {/* SECTION 3 */}
         <div>
           <h2 className="text-2xl font-semibold mb-4">
-            Girls Hostel with Food Near Christ University
+            Girls PG with Food Near Christ University
           </h2>
-          <p className="text-gray-600 leading-relaxed mb-6">
-            Food and hygiene are important parts of student life. We provide
-            freshly prepared meals in a clean and hygienic environment.
+
+          <p className="text-gray-600 mb-6">
+            Healthy and hygienic food is an essential part of student life. We
+            provide fresh meals prepared in a clean and hygienic environment to
+            ensure students enjoy nutritious food every day.
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-y-6 gap-x-20 text-gray-700 text-lg font-medium">
-            {[
-              "Fresh veg & non-veg meals",
-              "Hygienic kitchen",
-              "Balanced diet options",
-              "Regular quality checks",
-            ].map((item, i) => (
-              <div
-                key={i}
-                className={`flex items-start gap-3 ${
-                  i % 2 !== 0 ? "md:justify-end md:text-right" : ""
-                }`}
-              >
-                <span className="mt-1">•</span>
-                <span>{item}</span>
-              </div>
-            ))}
-          </div>
+
+          {renderList([
+            "Vegetarian and non-vegetarian meal options",
+            "Freshly prepared meals",
+            "Hygienic kitchen and dining area",
+            "Balanced and nutritious food",
+          ])}
         </div>
 
         <div className="relative w-full h-[300px] rounded-2xl overflow-hidden">
           <Image
-            src="/boys/room3.webp"
-            alt="Hostel Facilities"
+            src="/boys/room1.webp"
+            alt="Student Accommodation"
             fill
             className="object-cover"
           />
@@ -159,60 +155,106 @@ export default function GirlsBestHostels() {
           <h2 className="text-2xl font-semibold mb-4">
             Convenient Location Near Christ University Kengeri
           </h2>
-          <p className="text-gray-600 leading-relaxed mb-6">
-            Our hostel is strategically located with easy access to Christ
-            University Kengeri campus and nearby educational institutions.
+
+          <p className="text-gray-600 mb-6">
+            One of the biggest advantages of our PG accommodation is its
+            strategic location near Christ University Kengeri campus and
+            surrounding educational institutions.
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-y-6 gap-x-20 text-gray-700 text-lg font-medium">
-            {[
-              "Christ University Kengeri Campus",
-              "Public transport",
-              "Restaurants & supermarkets",
-              "Medical facilities",
-              "Student hangout spots",
-            ].map((item, i) => (
-              <div
-                key={i}
-                className={`flex items-start gap-3 ${
-                  i % 2 !== 0 ? "md:justify-end md:text-right" : ""
-                }`}
-              >
-                <span className="mt-1">•</span>
-                <span>{item}</span>
-              </div>
-            ))}
-          </div>
+
+          {renderList([
+            "Christ University Kengeri Campus",
+            "Public transportation facilities",
+            "Restaurants and cafes",
+            "Supermarkets and medical stores",
+            "Student-friendly environment",
+          ])}
+        </div>
+
+        {/* SECTION 5 */}
+        <div>
+          <h2 className="text-2xl font-semibold mb-4">
+            Why Choose HappiLiv Hostels?
+          </h2>
+
+          <p className="text-gray-600 mb-6">
+            At HappiLiv Hostels, we understand the daily needs of students
+            living away from home. Our goal is to provide a welcoming and
+            comfortable environment that supports both academics and personal
+            well-being.
+          </p>
+
+          {renderList([
+            "Safe and secure accommodation",
+            "Affordable pricing options",
+            "Prime location near Christ University",
+            "Student-friendly atmosphere",
+            "Modern facilities and amenities",
+            "Hygienic food and clean surroundings",
+            "Reliable management support",
+          ])}
+        </div>
+
+        <WhyChoose />
+
+        {/* SECTION 6 */}
+        <div>
+          <h2 className="text-2xl font-semibold mb-4">
+            Comfortable Student Living Experience
+          </h2>
+
+          <p className="text-gray-600 leading-relaxed">
+            Moving to a new city can be overwhelming for students, especially
+            when living away from home for the first time. Our PG accommodation
+            is designed to provide a home-like environment where students can
+            feel comfortable, safe, and supported throughout their educational
+            journey.
+          </p>
+
+          <p className="text-gray-600 leading-relaxed mt-4">
+            From study-friendly spaces to essential amenities, every aspect of
+            our accommodation is planned to improve student comfort and
+            convenience.
+          </p>
         </div>
 
         {/* FAQ */}
         <div>
-          <h2 className="text-2xl font-semibold mb-6">FAQs</h2>
+          <h2 className="text-2xl font-semibold mb-6">
+            Frequently Asked Questions
+          </h2>
+
           <div className="space-y-4">
             {[
               {
-                q: "Which is the best girls hostel near Christ University?",
-                a: "HappiLiv Hostels offers safe, affordable, and fully furnished accommodation.",
+                q: "Which is the best PG for girls near Christ University?",
+                a: "HappiLiv Hostels offers safe, affordable, and fully furnished PG accommodation for students near Christ University.",
               },
               {
-                q: "Do you provide food facilities?",
-                a: "Yes, we provide hygienic and nutritious food.",
+                q: "Do you provide food facilities in the PG?",
+                a: "Yes, we provide hygienic vegetarian and non-vegetarian meals for students.",
               },
               {
-                q: "Is the hostel safe?",
-                a: "Yes, we provide CCTV, secure access, and a safe environment.",
+                q: "Is the PG safe for female students?",
+                a: "Yes, our PG includes CCTV surveillance, secure access systems, and dedicated support staff.",
               },
               {
-                q: "Is WiFi available?",
-                a: "Yes, high-speed WiFi is available.",
+                q: "Is WiFi available for students?",
+                a: "Yes, high-speed WiFi is available for all residents.",
               },
               {
-                q: "How far is it from Christ University?",
-                a: "Our hostel is located very close with easy access.",
+                q: "Is the PG located near Christ University Kengeri?",
+                a: "Yes, our PG accommodation is conveniently located near Christ University Kengeri campus.",
               },
             ].map((faq, i) => (
-              <div key={i} className="border p-4 rounded-xl">
-                <h3 className="font-semibold">{faq.q}</h3>
-                <p className="text-gray-600 mt-2">{faq.a}</p>
+              <div key={i} className="border border-gray-200 rounded-2xl p-5">
+                <h3 className="font-semibold text-lg text-black">
+                  {faq.q}
+                </h3>
+
+                <p className="text-gray-600 mt-2 leading-relaxed">
+                  {faq.a}
+                </p>
               </div>
             ))}
           </div>
@@ -221,45 +263,48 @@ export default function GirlsBestHostels() {
       </section>
 
       {/* MAP SECTION */}
-      <section className="w-full bg-white pb-16">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-[60%_40%] gap-10">
-            <div>
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.709270117793!2d77.43257937358699!3d12.862045017273731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae38c490000001%3A0xaebe47889363e5de!2sHappiLiv%20Hostel!5e0!3m2!1sen!2sin!4v1770802434571!5m2!1sen!2sin"
-                width="600"
-                height="450"
-                loading="lazy"
-                allowFullScreen
-                referrerPolicy="no-referrer-when-downgrade"
-                className="w-full h-full rounded-2xl border-0"
-              ></iframe>
-            </div>
-            <div className="bg-[#EE1C4C] rounded-2xl p-8 text-white">
-              <h3 className="text-xl font-semibold mb-6">
-                Contact HappiLiv Hostels
-              </h3>
-              <div className="space-y-5">
-                <div className="bg-[#FFFFFF2A] p-4 rounded-xl">
-                  <p className="font-semibold text-sm mb-1">Phone</p>
-                  <p className="text-sm">+91 63630 98384</p>
-                  <p className="text-sm">+91 63661 24184</p>
-                </div>
-                <div className="bg-[#FFFFFF2A] p-4 rounded-xl">
-                  <p className="font-semibold text-sm mb-1">WhatsApp</p>
-                  <p className="text-sm">+91 78928 81368</p>
-                </div>
-                <div className="bg-[#FFFFFF2A] p-4 rounded-xl">
-                  <p className="font-semibold text-sm mb-1">Email</p>
-                  <p className="text-sm">happilivhostels@gmail.com</p>
-                </div>
+      <section className="w-full bg-white pb-16 px-6 md:px-16">
+        <div className="grid grid-cols-1 lg:grid-cols-[60%_40%] gap-10 items-stretch">
+
+          <div className="h-[450px]">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.709270117793!2d77.43257937358699!3d12.862045017273731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae38c490000001%3A0xaebe47889363e5de!2sHappiLiv%20Hostel!5e0!3m2!1sen!2sin!4v1770802434571!5m2!1sen!2sin"
+              width="600"
+              height="450"
+              loading="lazy"
+              allowFullScreen
+              referrerPolicy="no-referrer-when-downgrade"
+              className="w-full h-full rounded-2xl border-0"
+            ></iframe>
+          </div>
+
+          <div className="bg-[#EE1C4C] rounded-2xl p-8 text-white h-[450px] flex flex-col justify-center">
+            <h3 className="text-2xl font-semibold mb-6">
+              Contact HappiLiv Hostels
+            </h3>
+
+            <div className="space-y-5">
+              <div className="bg-[#FFFFFF2A] p-4 rounded-xl">
+                <p className="font-semibold mb-1">Phone</p>
+                <p>+91 63630 98384</p>
+                <p>+91 63661 24184</p>
+              </div>
+
+              <div className="bg-[#FFFFFF2A] p-4 rounded-xl">
+                <p className="font-semibold mb-1">WhatsApp</p>
+                <p>+91 78928 81368</p>
+              </div>
+
+              <div className="bg-[#FFFFFF2A] p-4 rounded-xl">
+                <p className="font-semibold mb-1">Email</p>
+                <p>happilivhostels@gmail.com</p>
               </div>
             </div>
           </div>
+
         </div>
       </section>
 
-      <WhyChoose />
       <ContactFormSection />
     </>
   );
