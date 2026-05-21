@@ -56,20 +56,49 @@ export default function BoysHostelChristUniversity() {
             Safe & Secure Boys Hostel Near Christ University
           </h2>
 
-          <p className="text-gray-600 mb-4">
+          <p className="text-gray-600 mb-6">
             Safety and comfort are important factors when choosing student
             accommodation. At HappiLiv Hostels, we provide a secure and peaceful
             environment where students can stay comfortably and focus on
             academics.
           </p>
 
-          <ul className="list-disc pl-6 text-gray-600 space-y-2">
-            <li>24/7 CCTV surveillance</li>
-            <li>Secure entry access</li>
-            <li>Dedicated hostel support staff</li>
-            <li>Safe and student-friendly atmosphere</li>
-            <li>Regular monitoring and maintenance</li>
-          </ul>
+          <div className="space-y-4 text-gray-600">
+
+            {/* 2x2 GRID */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+              <div className="flex items-center gap-2">
+                <span>•</span>
+                <span>24/7 CCTV surveillance</span>
+              </div>
+
+              <div className="flex items-center gap-2">
+                <span>•</span>
+                <span>Secure entry access</span>
+              </div>
+
+              <div className="flex items-center gap-2">
+                <span>•</span>
+                <span>Dedicated hostel support staff</span>
+              </div>
+
+              <div className="flex items-center gap-2">
+                <span>•</span>
+                <span>Safe and student-friendly atmosphere</span>
+              </div>
+
+            </div>
+
+            {/* CENTER LAST POINT */}
+            <div className="flex justify-center">
+              <div className="flex items-center gap-2">
+                <span>•</span>
+                <span>Regular monitoring and maintenance</span>
+              </div>
+            </div>
+
+          </div>
         </div>
 
         {/* SECTION 2 */}
@@ -214,40 +243,6 @@ export default function BoysHostelChristUniversity() {
           </Link>
         </div>
 
-        {/* FAQ */}
-        <div>
-          <h2 className="text-2xl font-semibold mb-6">FAQs</h2>
-
-          <div className="space-y-4">
-            {[
-              {
-                q: "Which is the best boys hostel near Christ University?",
-                a: "HappiLiv Hostels offers safe, affordable, and fully furnished accommodation for students near Christ University.",
-              },
-              {
-                q: "Do you provide food facilities for students?",
-                a: "Yes, we provide hygienic vegetarian and non-vegetarian meals for students.",
-              },
-              {
-                q: "Is the hostel safe for students?",
-                a: "Yes, our hostel includes CCTV surveillance, secure access systems, and dedicated hostel support staff.",
-              },
-              {
-                q: "Is WiFi available in the hostel?",
-                a: "Yes, high-speed WiFi is available for all residents.",
-              },
-              {
-                q: "Is the hostel near Christ University Kengeri?",
-                a: "Yes, our hostel is conveniently located near Christ University Kengeri campus.",
-              },
-            ].map((faq, i) => (
-              <div key={i} className="border p-4 rounded-xl">
-                <h3 className="font-semibold">{faq.q}</h3>
-                <p className="text-gray-600 mt-2">{faq.a}</p>
-              </div>
-            ))}
-          </div>
-        </div>
       </section>
 
       {/* MAP SECTION */}
