@@ -87,47 +87,7 @@ export default function BoysRoomSection() {
 
             <div className="max-w-6xl mx-auto">
 
-                {/* SEO INTERNAL LINKS */}
-                <div className="text-center mb-12">
-
-                    <h2 className="text-3xl md:text-4xl font-bold mb-4 text-black">
-                        Boys Hostel Near Christ University
-                    </h2>
-
-                    <p className="text-gray-700 text-lg leading-relaxed max-w-4xl mx-auto">
-                        Looking for safe, affordable, and fully furnished student accommodation?
-                        Explore our premium{" "}
-
-                        <Link
-                            href="/boys-hostel-near-christ-university"
-                            className="text-blue-600 font-semibold underline hover:text-blue-800 transition"
-                        >
-                            boys hostel near Christ University
-                        </Link>
-
-                        {" "}with modern amenities, WiFi, food facilities, and comfortable student living.
-                    </p>
-
-                    {/* BUTTONS */}
-                    <div className="flex flex-wrap justify-center gap-4 mt-6">
-
-                        <Link
-                            href="/boys-hostel-near-christ-university"
-                            className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-xl font-semibold transition"
-                        >
-                            Explore Boys Hostel
-                        </Link>
-
-                        <Link
-                            href="/contact"
-                            className="bg-pink-600 hover:bg-pink-700 text-white px-6 py-3 rounded-xl font-semibold transition"
-                        >
-                            Contact Now
-                        </Link>
-
-                    </div>
-
-                </div>
+                
 
                 {/* ROOM CARDS */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
