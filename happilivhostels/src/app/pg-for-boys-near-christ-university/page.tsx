@@ -1,7 +1,7 @@
-import Banner from "./Components/Banner";
-import Features from "./Components/Features";
+import BannerSection from "./Components/Banner";
+import ContactFormSection from "./Components/ContactSection";
+import WhyChoose from "./Components/Why";
 import { Metadata } from "next";
-import Link from "next/link";
 import Image from "next/image";
 
 export const metadata: Metadata = {
@@ -11,12 +11,22 @@ export const metadata: Metadata = {
     "Looking for a PG for boys near Christ University? HappiLiv Hostels offers safe, affordable, and fully furnished PG accommodation with food, WiFi, and modern amenities for students.",
 };
 
+const BulletGrid = ({ items }: { items: string[] }) => (
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-4 mt-6">
+    {items.map((item, index) => (
+      <div key={index} className="flex items-start gap-3">
+        <span className="text-[#EE1C4C] text-xl leading-6">•</span>
+        <span className="text-gray-700 leading-relaxed">{item}</span>
+      </div>
+    ))}
+  </div>
+);
+
 export default function PgForBoysChristUniversity() {
   return (
     <>
-      <Banner />
+      <BannerSection />
 
-      {/* MAIN CONTENT */}
       <section className="px-6 md:px-16 py-12 space-y-12">
 
         {/* H1 */}
@@ -62,41 +72,22 @@ export default function PgForBoysChristUniversity() {
             Safe & Secure PG Accommodation for Boys
           </h2>
 
-          <p className="text-gray-600 mb-6">
+          <p className="text-gray-600 leading-relaxed">
             Safety and comfort are essential when choosing student
             accommodation. At HappiLiv Hostels, we maintain a secure and
             peaceful environment where students can stay confidently and focus
             on academics.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-y-6 gap-x-20 text-gray-700 text-lg font-medium">
-
-            <div className="flex items-start gap-3">
-              <span className="mt-1">•</span>
-              <span>24/7 CCTV surveillance</span>
-            </div>
-
-            <div className="flex items-start justify-end gap-3 text-right">
-              <span className="mt-1">•</span>
-              <span>Secure entry systems</span>
-            </div>
-
-            <div className="flex items-start gap-3">
-              <span className="mt-1">•</span>
-              <span>Dedicated hostel support staff</span>
-            </div>
-
-            <div className="flex items-start justify-end gap-3 text-right">
-              <span className="mt-1">•</span>
-              <span>Safe and student-friendly surroundings</span>
-            </div>
-
-            <div className="flex items-start gap-3">
-              <span className="mt-1">•</span>
-              <span>Regular monitoring and maintenance</span>
-            </div>
-
-          </div>
+          <BulletGrid
+            items={[
+              "24/7 CCTV surveillance",
+              "Secure entry systems",
+              "Dedicated hostel support staff",
+              "Safe and student-friendly surroundings",
+              "Regular monitoring and maintenance",
+            ]}
+          />
         </div>
 
         {/* SECTION 2 */}
@@ -105,51 +96,24 @@ export default function PgForBoysChristUniversity() {
             Affordable PG for Boys Near Christ University
           </h2>
 
-          <p className="text-gray-600 mb-6">
+          <p className="text-gray-600 leading-relaxed">
             Students often search for PG accommodation that combines
             affordability with comfort and essential facilities. HappiLiv
             Hostels offers well-maintained rooms and modern amenities at
             student-friendly pricing.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-y-6 gap-x-20 text-gray-700 text-lg font-medium">
-
-            <div className="flex items-start gap-3">
-              <span className="mt-1">•</span>
-              <span>Fully furnished rooms</span>
-            </div>
-
-            <div className="flex items-start justify-end gap-3 text-right">
-              <span className="mt-1">•</span>
-              <span>Comfortable beds and storage spaces</span>
-            </div>
-
-            <div className="flex items-start gap-3">
-              <span className="mt-1">•</span>
-              <span>High-speed WiFi connectivity</span>
-            </div>
-
-            <div className="flex items-start justify-end gap-3 text-right">
-              <span className="mt-1">•</span>
-              <span>Daily housekeeping services</span>
-            </div>
-
-            <div className="flex items-start gap-3">
-              <span className="mt-1">•</span>
-              <span>Laundry facilities</span>
-            </div>
-
-            <div className="flex items-start justify-end gap-3 text-right">
-              <span className="mt-1">•</span>
-              <span>Hygienic washrooms</span>
-            </div>
-
-            <div className="flex items-start gap-3">
-              <span className="mt-1">•</span>
-              <span>Reliable power backup</span>
-            </div>
-
-          </div>
+          <BulletGrid
+            items={[
+              "Fully furnished rooms",
+              "Comfortable beds and storage spaces",
+              "High-speed WiFi connectivity",
+              "Daily housekeeping services",
+              "Laundry facilities",
+              "Hygienic washrooms",
+              "Reliable power backup",
+            ]}
+          />
         </div>
 
         {/* IMAGE 2 */}
@@ -168,35 +132,20 @@ export default function PgForBoysChristUniversity() {
             Boys PG with Food Near Christ University
           </h2>
 
-          <p className="text-gray-600 mb-6">
+          <p className="text-gray-600 leading-relaxed">
             Good food and hygiene are important parts of student life. We
             provide freshly prepared meals in a clean and hygienic environment
             to ensure students enjoy healthy and nutritious food every day.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-y-6 gap-x-20 text-gray-700 text-lg font-medium">
-
-            <div className="flex items-start gap-3">
-              <span className="mt-1">•</span>
-              <span>Fresh vegetarian and non-vegetarian meals</span>
-            </div>
-
-            <div className="flex items-start justify-end gap-3 text-right">
-              <span className="mt-1">•</span>
-              <span>Hygienic kitchen and dining facilities</span>
-            </div>
-
-            <div className="flex items-start gap-3">
-              <span className="mt-1">•</span>
-              <span>Balanced meal options</span>
-            </div>
-
-            <div className="flex items-start justify-end gap-3 text-right">
-              <span className="mt-1">•</span>
-              <span>Quality-focused food preparation</span>
-            </div>
-
-          </div>
+          <BulletGrid
+            items={[
+              "Fresh vegetarian and non-vegetarian meals",
+              "Hygienic kitchen and dining facilities",
+              "Balanced meal options",
+              "Quality-focused food preparation",
+            ]}
+          />
         </div>
 
         {/* IMAGE 3 */}
@@ -215,40 +164,21 @@ export default function PgForBoysChristUniversity() {
             Prime Location Near Christ University Kengeri
           </h2>
 
-          <p className="text-gray-600 mb-6">
+          <p className="text-gray-600 leading-relaxed">
             One of the biggest advantages of staying at HappiLiv Hostels is our
             convenient location near Christ University Kengeri campus and
             surrounding educational institutions.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-y-6 gap-x-20 text-gray-700 text-lg font-medium">
-
-            <div className="flex items-start gap-3">
-              <span className="mt-1">•</span>
-              <span>Christ University Kengeri Campus</span>
-            </div>
-
-            <div className="flex items-start justify-end gap-3 text-right">
-              <span className="mt-1">•</span>
-              <span>Public transportation facilities</span>
-            </div>
-
-            <div className="flex items-start gap-3">
-              <span className="mt-1">•</span>
-              <span>Restaurants and cafes</span>
-            </div>
-
-            <div className="flex items-start justify-end gap-3 text-right">
-              <span className="mt-1">•</span>
-              <span>Supermarkets and medical stores</span>
-            </div>
-
-            <div className="flex items-start gap-3">
-              <span className="mt-1">•</span>
-              <span>Student-friendly surroundings</span>
-            </div>
-
-          </div>
+          <BulletGrid
+            items={[
+              "Christ University Kengeri Campus",
+              "Public transportation facilities",
+              "Restaurants and cafes",
+              "Supermarkets and medical stores",
+              "Student-friendly surroundings",
+            ]}
+          />
         </div>
 
         {/* SECTION 5 */}
@@ -257,55 +187,27 @@ export default function PgForBoysChristUniversity() {
             Why Choose HappiLiv Hostels?
           </h2>
 
-          <p className="text-gray-600 mb-6">
+          <p className="text-gray-600 leading-relaxed">
             At HappiLiv Hostels, we understand the daily needs of students
             living away from home. Our goal is to provide a comfortable,
             affordable, and supportive living environment that helps students
             focus on academics and personal growth.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-y-6 gap-x-20 text-gray-700 text-lg font-medium">
-
-            <div className="flex items-start gap-3">
-              <span className="mt-1">•</span>
-              <span>Safe and secure accommodation</span>
-            </div>
-
-            <div className="flex items-start justify-end gap-3 text-right">
-              <span className="mt-1">•</span>
-              <span>Affordable pricing options</span>
-            </div>
-
-            <div className="flex items-start gap-3">
-              <span className="mt-1">•</span>
-              <span>Prime location near Christ University</span>
-            </div>
-
-            <div className="flex items-start justify-end gap-3 text-right">
-              <span className="mt-1">•</span>
-              <span>Student-friendly atmosphere</span>
-            </div>
-
-            <div className="flex items-start gap-3">
-              <span className="mt-1">•</span>
-              <span>Modern amenities and facilities</span>
-            </div>
-
-            <div className="flex items-start justify-end gap-3 text-right">
-              <span className="mt-1">•</span>
-              <span>Hygienic food and clean surroundings</span>
-            </div>
-
-            <div className="flex items-start gap-3">
-              <span className="mt-1">•</span>
-              <span>Reliable hostel management support</span>
-            </div>
-
-          </div>
+          <BulletGrid
+            items={[
+              "Safe and secure accommodation",
+              "Affordable pricing options",
+              "Prime location near Christ University",
+              "Student-friendly atmosphere",
+              "Modern amenities and facilities",
+              "Hygienic food and clean surroundings",
+              "Reliable hostel management support",
+            ]}
+          />
         </div>
 
-        {/* FEATURES */}
-        <Features />
+        <WhyChoose />
 
         {/* SECTION 6 */}
         <div>
@@ -313,38 +215,18 @@ export default function PgForBoysChristUniversity() {
             Comfortable Student Living Experience
           </h2>
 
-          <p className="text-gray-600 leading-relaxed">
+          <p className="text-gray-600 leading-relaxed mb-4">
             Moving to a new city can be challenging for students, especially
             for those living away from home for the first time. Our PG
             accommodation is designed to provide a welcoming and stress-free
             environment where students can feel comfortable and supported
             throughout their educational journey.
           </p>
-        </div>
-
-        {/* SECTION 7 */}
-        <div>
-          <h2 className="text-2xl font-semibold mb-4">
-            Book Your Stay at HappiLiv Hostels
-          </h2>
 
           <p className="text-gray-600 leading-relaxed">
-            If you are looking for a secure and affordable PG for boys near
-            Christ University, HappiLiv Hostels offers the ideal accommodation
-            solution for students seeking comfort, convenience, and safety.
+            From spacious rooms to study-friendly surroundings, every facility
+            is planned to improve convenience and student comfort.
           </p>
-
-          <p className="text-gray-600 leading-relaxed mt-4">
-            Contact us today to learn more about room availability, facilities,
-            and PG admission details.
-          </p>
-
-          <Link
-            href="/contact"
-            className="inline-block mt-6 bg-blue-600 text-white px-6 py-3 rounded-xl hover:bg-blue-700 transition"
-          >
-            Contact Us
-          </Link>
         </div>
 
         {/* FAQ SECTION */}
@@ -414,25 +296,26 @@ export default function PgForBoysChristUniversity() {
           </div>
 
           {/* CONTACT CARD */}
-          <div className="bg-blue-600 rounded-2xl p-8 text-white h-[450px] flex flex-col justify-center">
+          <div className="bg-[#EE1C4C] rounded-2xl p-8 text-white h-[450px] flex flex-col justify-center">
+
             <h3 className="text-2xl font-semibold mb-6">
               Contact HappiLiv Hostels
             </h3>
 
             <div className="space-y-5">
 
-              <div className="bg-white/20 p-4 rounded-xl">
+              <div className="bg-[#FFFFFF2A] p-4 rounded-xl">
                 <p className="font-semibold mb-1">Phone</p>
                 <p>+91 63630 98384</p>
                 <p>+91 63661 24184</p>
               </div>
 
-              <div className="bg-white/20 p-4 rounded-xl">
+              <div className="bg-[#FFFFFF2A] p-4 rounded-xl">
                 <p className="font-semibold mb-1">WhatsApp</p>
                 <p>+91 78928 81368</p>
               </div>
 
-              <div className="bg-white/20 p-4 rounded-xl">
+              <div className="bg-[#FFFFFF2A] p-4 rounded-xl">
                 <p className="font-semibold mb-1">Email</p>
                 <p>happilivhostels@gmail.com</p>
               </div>
@@ -442,6 +325,8 @@ export default function PgForBoysChristUniversity() {
 
         </div>
       </section>
+
+      <ContactFormSection />
     </>
   );
 }
