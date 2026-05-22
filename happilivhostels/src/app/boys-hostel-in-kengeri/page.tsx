@@ -1,8 +1,4 @@
 import Banner from "./component/Banner";
-import Rooms from "./component/Rooms";
-import ContactSection from "./component/ContactSection";
-import Content from "./component/Content";
-import SigleContent from "./component/SigleContent";
 import Why from "./component/Why";
 
 import { Metadata } from "next";
@@ -310,7 +306,7 @@ export default function BoysHostelKengeri() {
         </div>
       </section>
 
-      <ContactSection />
+      
     </>
   );
 }

@@ -25,72 +25,77 @@ export default function BoysRoomTariff() {
       <BoysRoomSection />
 
       {/* 2x2 SEO LINK CARDS */}
-      <section className="px-4 md:px-10 py-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+     {/* 2x2 SEO LINK CARDS */}
+<section className="px-6 md:px-16 py-12">
 
-          {/* CARD 1 */}
-          <Link
-            href="/boys-hostel-near-christ-university"
-            className="rounded-2xl p-8 bg-pink-500 text-white shadow-lg hover:scale-[1.02] transition duration-300"
-          >
-            <h3 className="text-2xl font-bold mb-3">
-              Boys Hostel Near Christ University
-            </h3>
+  <h2 className="text-3xl font-bold text-center mb-10">
+    Explore More Boys Hostel Options
+  </h2>
 
-            <p className="text-white/90 leading-relaxed">
-              Safe, affordable, and fully furnished hostel accommodation
-              near Christ University with modern amenities and food.
-            </p>
-          </Link>
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 
-          {/* CARD 2 */}
-          <Link
-            href="/boys-hostel-in-kengeri"
-            className="rounded-2xl p-8 bg-gray-800 text-white shadow-lg hover:scale-[1.02] transition duration-300"
-          >
-            <h3 className="text-2xl font-bold mb-3">
-              Boys Hostel in Kengeri
-            </h3>
+    {/* CARD 1 */}
+    <Link
+      href="/boys-hostel-near-christ-university"
+      className="bg-pink-100 hover:bg-pink-200 transition rounded-2xl p-8 shadow-md min-h-[180px] flex flex-col justify-center"
+    >
+      <h3 className="text-2xl font-semibold text-gray-800 mb-3">
+        Boys Hostel Near Christ University
+      </h3>
 
-            <p className="text-white/90 leading-relaxed">
-              Comfortable student accommodation in Kengeri Bangalore
-              with WiFi, food, security, and modern facilities.
-            </p>
-          </Link>
+      <p className="text-gray-600">
+        Safe, affordable, and fully furnished hostel accommodation
+        near Christ University with modern amenities and food.
+      </p>
+    </Link>
 
-          {/* CARD 3 */}
-          <Link
-            href="/pg-for-boys-near-christ-university"
-            className="rounded-2xl p-8 bg-gray-800 text-white shadow-lg hover:scale-[1.02] transition duration-300"
-          >
-            <h3 className="text-2xl font-bold mb-3">
-              PG for Boys Near Christ University
-            </h3>
+    {/* CARD 2 */}
+    <Link
+      href="/boys-hostel-in-kengeri"
+      className="bg-gray-100 hover:bg-gray-200 transition rounded-2xl p-8 shadow-md min-h-[180px] flex flex-col justify-center"
+    >
+      <h3 className="text-2xl font-semibold text-gray-800 mb-3">
+        Boys Hostel in Kengeri
+      </h3>
 
-            <p className="text-white/90 leading-relaxed">
-              Affordable PG accommodation for boys near Christ University
-              with furnished rooms and hygienic food.
-            </p>
-          </Link>
+      <p className="text-gray-600">
+        Comfortable student accommodation in Kengeri Bangalore
+        with WiFi, food, security, and modern facilities.
+      </p>
+    </Link>
 
-          {/* CARD 4 */}
-          <Link
-            href="/boys-hostel-near-kumbalagodu"
-            className="rounded-2xl p-8 bg-pink-500 text-white shadow-lg hover:scale-[1.02] transition duration-300"
-          >
-            <h3 className="text-2xl font-bold mb-3">
-              Boys Hostel Near Kumbalagodu
-            </h3>
+    {/* CARD 3 */}
+    <Link
+      href="/pg-for-boys-near-christ-university"
+      className="bg-gray-100 hover:bg-gray-200 transition rounded-2xl p-8 shadow-md min-h-[180px] flex flex-col justify-center"
+    >
+      <h3 className="text-2xl font-semibold text-gray-800 mb-3">
+        PG for Boys Near Christ University
+      </h3>
 
-            <p className="text-white/90 leading-relaxed">
-              Student-friendly boys hostel near Kumbalagodu with
-              secure rooms, WiFi, food, and modern amenities.
-            </p>
-          </Link>
+      <p className="text-gray-600">
+        Affordable PG accommodation for boys near Christ University
+        with furnished rooms and hygienic food.
+      </p>
+    </Link>
 
-        </div>
-      </section>
- 
+    {/* CARD 4 */}
+    <Link
+      href="/boys-hostel-near-kumbalagodu"
+      className="bg-pink-100 hover:bg-pink-200 transition rounded-2xl p-8 shadow-md min-h-[180px] flex flex-col justify-center"
+    >
+      <h3 className="text-2xl font-semibold text-gray-800 mb-3">
+        Boys Hostel Near Kumbalagodu
+      </h3>
+
+      <p className="text-gray-600">
+        Student-friendly boys hostel near Kumbalagodu with
+        secure rooms, WiFi, food, and modern amenities.
+      </p>
+    </Link>
+
+  </div>
+</section>
       <WhyChoose />
    
       <ContactFormSection />
