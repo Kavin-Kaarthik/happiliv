@@ -91,29 +91,12 @@ export default function Girls() {
         </div>
       </section>
 
-      <ContentSection />
+    
 
-      {/* INTERNAL LINK SECTION */}
-      <section className="px-6 md:px-16 py-10 bg-gray-50">
-        <h2 className="text-2xl font-semibold mb-4">
-          Looking for a Hostel Near Christ University?
-        </h2>
-
-        <p className="text-gray-600 mb-4">
-          Explore our dedicated page for students searching for safe and
-          affordable accommodation near Christ University, Bangalore.
-        </p>
-
-        <Link
-          href="/girls-hostel-near-christ-university"
-          className="text-[#FF5B80] font-semibold underline"
-        >
-          Girls Hostel Near Christ University →
-        </Link>
-      </section>
+       
 
       <WhyChoose />
-      <SingleContentSection />
+     
       <ContactFormSection />
     </>
   );

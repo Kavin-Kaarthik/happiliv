@@ -1,8 +1,8 @@
 import Banner from "./component/Banner";
 import ContactFormSection from "./component/ContactSection";
-import ContentSection from "./component/Content";
+
 import BoysRoomSection from "./component/Rooms";
-import SingleContentSection from "./component/SigleContent";
+
 import WhyChoose from "./component/Why";
 import { Metadata } from "next";
 import Link from "next/link";
@@ -90,10 +90,9 @@ export default function BoysRoomTariff() {
 
         </div>
       </section>
-
-      <ContentSection />
+ 
       <WhyChoose />
-      <SingleContentSection />
+   
       <ContactFormSection />
     </>
   );

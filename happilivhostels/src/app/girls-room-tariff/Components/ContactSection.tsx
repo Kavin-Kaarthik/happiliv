@@ -13,14 +13,20 @@ export default function ContactFormSection() {
 
   const [formData, setFormData] = useState({
     name: '',
+    email: '',
     phone: '',
+    roomType: '',
     message: '',
   });
 
   const [loading, setLoading] = useState(false);
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<
+      HTMLInputElement |
+      HTMLTextAreaElement |
+      HTMLSelectElement
+    >
   ) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
@@ -35,12 +41,20 @@ export default function ContactFormSection() {
       return;
     }
 
+    if (!formData.email.trim()) {
+      toast.error('Email is required');
+      return;
+    }
+
     if (!isValidPhone(formData.phone)) {
       toast.error('Please enter a valid 10-digit mobile number');
       return;
     }
 
-    
+    if (!formData.roomType) {
+      toast.error('Please select a room type');
+      return;
+    }
 
     if (!executeRecaptcha) {
       toast.error('reCAPTCHA not ready');
@@ -57,15 +71,24 @@ export default function ContactFormSection() {
         '/booking/roombookinggmail',
         {
           name: formData.name,
+          email: formData.email,
           phone: formData.phone,
+          roomType: formData.roomType,
           message: formData.message,
           gender: 'Girls',
-          recaptchaToken: recaptchaToken, // 👈 send token
+          recaptchaToken: recaptchaToken,
         }
       );
 
       toast.success('Message sent successfully!');
-      setFormData({ name: '', phone: '', message: '' });
+
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        roomType: '',
+        message: '',
+      });
 
     } catch (error) {
       toast.error('Something went wrong. Please try again.');
@@ -75,7 +98,8 @@ export default function ContactFormSection() {
   };
 
   return (
-    <section className="relative w-full min-h-[90vh] flex items-center justify-center overflow-hidden mb-10"
+    <section
+      className="relative w-full min-h-[90vh] flex items-center justify-center overflow-hidden mb-10"
       id="contact-form"
     >
 
@@ -87,9 +111,11 @@ export default function ContactFormSection() {
         priority
         className="object-cover grayscale"
       />
+
       <div className="absolute inset-0 bg-black/70"></div>
 
       <div className="relative z-10 max-w-7xl w-full px-6 md:px-16 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+
         {/* LOGO */}
         <motion.div
           initial={{ opacity: 0, x: -40 }}
@@ -125,6 +151,7 @@ export default function ContactFormSection() {
 
           <form onSubmit={handleSubmit} className="space-y-4">
 
+            {/* NAME */}
             <input
               type="text"
               name="name"
@@ -135,6 +162,18 @@ export default function ContactFormSection() {
               className="w-full bg-transparent border border-white/30 rounded-full px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-[#FF5B80]"
             />
 
+            {/* EMAIL */}
+            <input
+              type="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              placeholder="Enter Your Email Address *"
+              required
+              className="w-full bg-transparent border border-white/30 rounded-full px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-[#FF5B80]"
+            />
+
+            {/* PHONE */}
             <input
               type="tel"
               name="phone"
@@ -151,6 +190,32 @@ export default function ContactFormSection() {
               className="w-full bg-transparent border border-white/30 rounded-full px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-[#FF5B80]"
             />
 
+            {/* ROOM TYPE */}
+            <select
+              name="roomType"
+              value={formData.roomType}
+              onChange={handleChange}
+              required
+              className="w-full bg-transparent border border-white/30 rounded-full px-4 py-3 text-white focus:outline-none focus:border-[#FF5B80]"
+            >
+              <option value="" className="text-black">
+                Select Room Type *
+              </option>
+
+              <option value="Single Sharing" className="text-black">
+                Single Sharing
+              </option>
+
+              <option value="Double Sharing" className="text-black">
+                Double Sharing
+              </option>
+
+              <option value="Triple Sharing" className="text-black">
+                Triple Sharing
+              </option>
+            </select>
+
+            {/* MESSAGE */}
             <textarea
               name="message"
               value={formData.message}
@@ -160,11 +225,11 @@ export default function ContactFormSection() {
               className="w-full bg-transparent border border-white/30 rounded-2xl px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-[#FF5B80] resize-none"
             />
 
+            {/* BUTTON */}
             <button
-
               type="submit"
               disabled={loading}
-              className="cursor-pointer w-full bg-[#FF5B80] hover:bg-[#FF5B80] transition text-white font-semibold py-3 rounded-full disabled:opacity-50"
+              className="cursor-pointer w-full bg-[#FF5B80] hover:bg-[#ff416c] transition text-white font-semibold py-3 rounded-full disabled:opacity-50"
             >
               {loading ? 'Sending...' : 'Enquire Now'}
             </button>

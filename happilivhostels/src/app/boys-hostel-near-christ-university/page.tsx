@@ -1,9 +1,7 @@
 
 import Banner from "./component/Banner";
-import Rooms from "./component/Rooms";
-import ContactSection from "./component/ContactSection";
-import Content from "./component/Content";
-import SigleContent from "./component/SigleContent";
+
+
 import Why from "./component/Why";
 
 import { Metadata } from "next";
@@ -184,10 +182,11 @@ export default function BoysHostelChristUniversity() {
         </div>
 
         {/* COMPONENTS */}
-        <Rooms />
+       
+       
         <Why />
-        <Content />
-        <SigleContent />
+       
+       
 
         {/* SECTION 5 */}
         <div>
@@ -262,7 +261,7 @@ export default function BoysHostelChristUniversity() {
         </div>
       </section>
 
-      <ContactSection />
+
     </>
   );
 }
