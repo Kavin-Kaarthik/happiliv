@@ -302,7 +302,7 @@ export default function BoysHostelNearKumbalagodu() {
         </div>
       </section>
 
-      <
+      
     </>
   );
 }

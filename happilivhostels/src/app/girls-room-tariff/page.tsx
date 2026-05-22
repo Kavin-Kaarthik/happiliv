@@ -1,8 +1,8 @@
 import BannerSection from "./Components/Banner";
 import ContactFormSection from "./Components/ContactSection";
-import ContentSection from "./Components/Content";
+ 
 import BoysRoomSection from "./Components/Rooms";
-import SingleContentSection from "./Components/SigleContent";
+  
 import WhyChoose from "./Components/Why";
 import Link from "next/link";
 import { Metadata } from "next";
