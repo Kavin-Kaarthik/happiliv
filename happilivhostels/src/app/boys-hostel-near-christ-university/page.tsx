@@ -1,7 +1,8 @@
-import Banner from "./Components/Banner";
-import ContactFormSection from "./Components/ContactSection";
-import Features from "./Components/Features";
+import Banner from "./components/Banner";
+import Features from "./components/Features";
+
 import { Metadata } from "next";
+import Link from "next/link";
 import Image from "next/image";
 
 export const metadata: Metadata = {
@@ -12,11 +13,11 @@ export const metadata: Metadata = {
 };
 
 const BulletGrid = ({ items }: { items: string[] }) => (
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-4 mt-6">
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-5 mt-6">
     {items.map((item, index) => (
       <div key={index} className="flex items-start gap-3">
-        <span className="text-[#EE1C4C] text-xl leading-6">•</span>
-        <span className="text-gray-700 leading-relaxed">{item}</span>
+        <span className="text-[#EE1C4C] text-xl leading-none">•</span>
+        <span className="text-gray-700">{item}</span>
       </div>
     ))}
   </div>
@@ -27,8 +28,10 @@ export default function BoysHostelChristUniversity() {
     <>
       <Banner />
 
-      <section className="px-6 md:px-16 py-12 space-y-12">
+      {/* MAIN CONTENT */}
+      <section className="px-6 md:px-16 py-12 space-y-14">
 
+        {/* H1 */}
         <div>
           <h1 className="text-3xl md:text-4xl font-bold mb-4">
             Boys Hostel Near Christ University
@@ -55,10 +58,11 @@ export default function BoysHostelChristUniversity() {
           </p>
         </div>
 
-        <div className="relative w-full h-[300px] rounded-2xl overflow-hidden">
+        {/* IMAGE 1 */}
+        <div className="relative w-full h-[320px] rounded-2xl overflow-hidden">
           <Image
             src="/boys/room1.webp"
-            alt="Boys Hostel Near Christ University"
+            alt="Room Facilities"
             fill
             className="object-cover"
           />
@@ -88,15 +92,6 @@ export default function BoysHostelChristUniversity() {
           />
         </div>
 
-        <div className="relative w-full h-[300px] rounded-2xl overflow-hidden">
-          <Image
-            src="/boys/room2.webp"
-            alt="Boys Hostel Facilities"
-            fill
-            className="object-cover"
-          />
-        </div>
-
         {/* SECTION 2 */}
         <div>
           <h2 className="text-2xl font-semibold mb-4">
@@ -105,9 +100,7 @@ export default function BoysHostelChristUniversity() {
 
           <p className="text-gray-600 leading-relaxed">
             Students often look for accommodation that combines affordability
-            with essential facilities and comfort. HappiLiv Hostels provides
-            well-maintained rooms and modern amenities at student-friendly
-            pricing.
+            with essential facilities and comfort.
           </p>
 
           <BulletGrid
@@ -123,6 +116,16 @@ export default function BoysHostelChristUniversity() {
           />
         </div>
 
+        {/* IMAGE 2 */}
+        <div className="relative w-full h-[320px] rounded-2xl overflow-hidden">
+          <Image
+            src="/boys/room2.webp"
+            alt="Boys Hostel"
+            fill
+            className="object-cover"
+          />
+        </div>
+
         {/* SECTION 3 */}
         <div>
           <h2 className="text-2xl font-semibold mb-4">
@@ -131,9 +134,7 @@ export default function BoysHostelChristUniversity() {
 
           <p className="text-gray-600 leading-relaxed">
             Good food and hygiene play an important role in maintaining a
-            healthy student lifestyle. We provide freshly prepared meals in a
-            clean and hygienic environment to ensure students enjoy nutritious
-            food every day.
+            healthy student lifestyle.
           </p>
 
           <BulletGrid
@@ -146,10 +147,11 @@ export default function BoysHostelChristUniversity() {
           />
         </div>
 
-        <div className="relative w-full h-[300px] rounded-2xl overflow-hidden">
+        {/* IMAGE 3 */}
+        <div className="relative w-full h-[320px] rounded-2xl overflow-hidden">
           <Image
             src="/boys/room3.webp"
-            alt="Hostel Rooms and Amenities"
+            alt="Hostel Facilities"
             fill
             className="object-cover"
           />
@@ -163,13 +165,12 @@ export default function BoysHostelChristUniversity() {
 
           <p className="text-gray-600 leading-relaxed">
             One of the biggest advantages of staying at HappiLiv Hostels is our
-            convenient location near Christ University Kengeri campus and
-            surrounding educational institutions.
+            convenient location near Christ University Kengeri campus.
           </p>
 
           <BulletGrid
             items={[
-              "Christ University Kengeri Campus nearby",
+              "Christ University Kengeri Campus",
               "Public transportation facilities",
               "Restaurants and cafes",
               "Supermarkets and medical stores",
@@ -186,9 +187,7 @@ export default function BoysHostelChristUniversity() {
 
           <p className="text-gray-600 leading-relaxed">
             At HappiLiv Hostels, we understand the daily needs of students
-            living away from home. Our goal is to provide a comfortable,
-            affordable, and supportive environment that helps students focus on
-            academics and personal growth.
+            living away from home.
           </p>
 
           <BulletGrid
@@ -204,72 +203,8 @@ export default function BoysHostelChristUniversity() {
           />
         </div>
 
+        {/* FEATURES */}
         <Features />
-
-        {/* SECTION 6 */}
-        <div>
-          <h2 className="text-2xl font-semibold mb-4">
-            Comfortable Student Living Experience
-          </h2>
-
-          <p className="text-gray-600 leading-relaxed mb-4">
-            Moving to a new city for education can be challenging, especially
-            for students living away from home for the first time. Our hostel is
-            designed to create a welcoming and stress-free environment where
-            students can feel comfortable and supported throughout their
-            educational journey.
-          </p>
-
-          <p className="text-gray-600 leading-relaxed">
-            From spacious rooms to study-friendly surroundings, every facility
-            is planned to improve convenience and student comfort.
-          </p>
-        </div>
-
-        {/* FAQ SECTION */}
-        <div>
-          <h2 className="text-2xl font-semibold mb-6">
-            Frequently Asked Questions
-          </h2>
-
-          <div className="space-y-4">
-            {[
-              {
-                q: "Which is the best boys hostel near Christ University?",
-                a: "HappiLiv Hostels offers safe, affordable, and fully furnished accommodation for students near Christ University.",
-              },
-              {
-                q: "Do you provide food facilities for students?",
-                a: "Yes, we provide hygienic vegetarian and non-vegetarian meals for students.",
-              },
-              {
-                q: "Is the hostel safe for students?",
-                a: "Yes, our hostel includes CCTV surveillance, secure access systems, and dedicated hostel support staff.",
-              },
-              {
-                q: "Is WiFi available in the hostel?",
-                a: "Yes, high-speed WiFi is available for all residents.",
-              },
-              {
-                q: "Is the hostel near Christ University Kengeri?",
-                a: "Yes, our hostel is conveniently located near Christ University Kengeri campus.",
-              },
-            ].map((faq, i) => (
-              <div
-                key={i}
-                className="border border-gray-200 rounded-2xl p-5"
-              >
-                <h3 className="font-semibold text-lg text-black">
-                  {faq.q}
-                </h3>
-
-                <p className="text-gray-600 mt-2 leading-relaxed">
-                  {faq.a}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
 
       </section>
 
@@ -277,6 +212,7 @@ export default function BoysHostelChristUniversity() {
       <section className="w-full bg-white pb-16 px-6 md:px-16">
         <div className="grid grid-cols-1 lg:grid-cols-[60%_40%] gap-10 items-stretch">
 
+          {/* GOOGLE MAP */}
           <div className="h-[450px]">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.709270117793!2d77.43257937358699!3d12.862045017273731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae38c490000001%3A0xaebe47889363e5de!2sHappiLiv%20Hostel!5e0!3m2!1sen!2sin!4v1770802434571!5m2!1sen!2sin"
@@ -289,8 +225,8 @@ export default function BoysHostelChristUniversity() {
             ></iframe>
           </div>
 
+          {/* CONTACT CARD */}
           <div className="bg-[#EE1C4C] rounded-2xl p-8 text-white h-[450px] flex flex-col justify-center">
-
             <h3 className="text-2xl font-semibold mb-6">
               Contact HappiLiv Hostels
             </h3>
@@ -318,8 +254,6 @@ export default function BoysHostelChristUniversity() {
 
         </div>
       </section>
-
-      <ContactFormSection />
     </>
   );
 }
