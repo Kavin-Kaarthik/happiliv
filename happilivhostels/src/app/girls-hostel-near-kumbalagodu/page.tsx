@@ -313,7 +313,7 @@ export default function GirlsHostelKumbalagodu() {
         </div>
       </section>
 
-      <ContactFormSection />
+       
     </>
   );
 }

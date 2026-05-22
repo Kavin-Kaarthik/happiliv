@@ -341,8 +341,8 @@ export default function PgForGirlsChristUniversity() {
 
         </div>
       </section>
-
-      <ContactFormSection />
+ 
+      
     </>
   );
 }

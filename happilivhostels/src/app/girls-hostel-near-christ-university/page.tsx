@@ -330,7 +330,7 @@ export default function GirlsHostelKengeri() {
         </div>
       </section>
 
-      <ContactFormSection />
+       
     </>
   );
 }
