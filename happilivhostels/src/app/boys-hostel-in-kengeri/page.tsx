@@ -1,5 +1,6 @@
-import Banner from "./Components/Banner";
-import Features from "./Components/Features";
+import Banner from "./components/Banner";
+import Features from "./components/Features";
+
 import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
@@ -11,13 +12,24 @@ export const metadata: Metadata = {
     "Looking for a boys hostel in Kengeri Bangalore? HappiLiv Hostels offers safe, affordable, and fully furnished accommodation with food, WiFi, and modern amenities for students.",
 };
 
+const BulletGrid = ({ items }: { items: string[] }) => (
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-5 mt-6">
+    {items.map((item, index) => (
+      <div key={index} className="flex items-start gap-3">
+        <span className="text-[#EE1C4C] text-xl leading-none">•</span>
+        <span className="text-gray-700">{item}</span>
+      </div>
+    ))}
+  </div>
+);
+
 export default function BoysHostelKengeri() {
   return (
     <>
       <Banner />
 
       {/* MAIN CONTENT */}
-      <section className="px-6 md:px-16 py-12 space-y-12">
+      <section className="px-6 md:px-16 py-12 space-y-14">
 
         {/* H1 */}
         <div>
@@ -48,7 +60,7 @@ export default function BoysHostelKengeri() {
         </div>
 
         {/* IMAGE 1 */}
-        <div className="relative w-full h-[300px] rounded-2xl overflow-hidden">
+        <div className="relative w-full h-[320px] rounded-2xl overflow-hidden">
           <Image
             src="/boys/room1.webp"
             alt="Boys Hostel in Kengeri Bangalore"
@@ -63,45 +75,22 @@ export default function BoysHostelKengeri() {
             Safe & Secure Boys Hostel in Kengeri
           </h2>
 
-          <p className="text-gray-600 mb-6">
+          <p className="text-gray-600 leading-relaxed">
             Safety and comfort are essential when choosing student
             accommodation. At HappiLiv Hostels, we maintain a secure and
             peaceful environment where students can stay confidently and focus
             on academics.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-5">
-
-            <div className="flex items-start gap-3">
-              <span className="text-xl leading-none">•</span>
-              <span className="text-gray-700">24/7 CCTV surveillance</span>
-            </div>
-
-            <div className="flex items-start gap-3 md:justify-self-end">
-              <span className="text-xl leading-none">•</span>
-              <span className="text-gray-700">Secure entry systems</span>
-            </div>
-
-            <div className="flex items-start gap-3">
-              <span className="text-xl leading-none">•</span>
-              <span className="text-gray-700">Dedicated hostel support staff</span>
-            </div>
-
-            <div className="flex items-start gap-3 md:justify-self-end">
-              <span className="text-xl leading-none">•</span>
-              <span className="text-gray-700">
-                Safe and student-friendly surroundings
-              </span>
-            </div>
-
-            <div className="flex items-start gap-3">
-              <span className="text-xl leading-none">•</span>
-              <span className="text-gray-700">
-                Regular monitoring and maintenance
-              </span>
-            </div>
-
-          </div>
+          <BulletGrid
+            items={[
+              "24/7 CCTV surveillance",
+              "Secure entry systems",
+              "Dedicated hostel support staff",
+              "Safe and student-friendly surroundings",
+              "Regular monitoring and maintenance",
+            ]}
+          />
         </div>
 
         {/* SECTION 2 */}
@@ -110,59 +99,28 @@ export default function BoysHostelKengeri() {
             Affordable Student Accommodation with Modern Amenities
           </h2>
 
-          <p className="text-gray-600 mb-6">
+          <p className="text-gray-600 leading-relaxed">
             Students often look for accommodation that offers both
             affordability and comfort. HappiLiv Hostels provides
             well-maintained rooms and modern amenities at student-friendly
             pricing.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-5">
-
-            <div className="flex items-start gap-3">
-              <span className="text-xl leading-none">•</span>
-              <span className="text-gray-700">Fully furnished rooms</span>
-            </div>
-
-            <div className="flex items-start gap-3 md:justify-self-end">
-              <span className="text-xl leading-none">•</span>
-              <span className="text-gray-700">
-                Comfortable beds and storage spaces
-              </span>
-            </div>
-
-            <div className="flex items-start gap-3">
-              <span className="text-xl leading-none">•</span>
-              <span className="text-gray-700">High-speed WiFi connectivity</span>
-            </div>
-
-            <div className="flex items-start gap-3 md:justify-self-end">
-              <span className="text-xl leading-none">•</span>
-              <span className="text-gray-700">
-                Daily housekeeping services
-              </span>
-            </div>
-
-            <div className="flex items-start gap-3">
-              <span className="text-xl leading-none">•</span>
-              <span className="text-gray-700">Laundry facilities</span>
-            </div>
-
-            <div className="flex items-start gap-3 md:justify-self-end">
-              <span className="text-xl leading-none">•</span>
-              <span className="text-gray-700">Hygienic washrooms</span>
-            </div>
-
-            <div className="flex items-start gap-3">
-              <span className="text-xl leading-none">•</span>
-              <span className="text-gray-700">Reliable power backup</span>
-            </div>
-
-          </div>
+          <BulletGrid
+            items={[
+              "Fully furnished rooms",
+              "Comfortable beds and storage spaces",
+              "High-speed WiFi connectivity",
+              "Daily housekeeping services",
+              "Laundry facilities",
+              "Hygienic washrooms",
+              "Reliable power backup",
+            ]}
+          />
         </div>
 
         {/* IMAGE 2 */}
-        <div className="relative w-full h-[300px] rounded-2xl overflow-hidden">
+        <div className="relative w-full h-[320px] rounded-2xl overflow-hidden">
           <Image
             src="/boys/room2.webp"
             alt="Student Hostel in Kengeri"
@@ -177,45 +135,24 @@ export default function BoysHostelKengeri() {
             Boys Hostel with Food in Kengeri Bangalore
           </h2>
 
-          <p className="text-gray-600 mb-6">
+          <p className="text-gray-600 leading-relaxed">
             Healthy and hygienic food is an important part of student life.
             We provide freshly prepared meals in a clean and hygienic
             environment to ensure students enjoy quality food every day.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-5">
-
-            <div className="flex items-start gap-3">
-              <span className="text-xl leading-none">•</span>
-              <span className="text-gray-700">
-                Fresh vegetarian and non-vegetarian meals
-              </span>
-            </div>
-
-            <div className="flex items-start gap-3 md:justify-self-end">
-              <span className="text-xl leading-none">•</span>
-              <span className="text-gray-700">
-                Hygienic kitchen and dining area
-              </span>
-            </div>
-
-            <div className="flex items-start gap-3">
-              <span className="text-xl leading-none">•</span>
-              <span className="text-gray-700">Balanced meal options</span>
-            </div>
-
-            <div className="flex items-start gap-3 md:justify-self-end">
-              <span className="text-xl leading-none">•</span>
-              <span className="text-gray-700">
-                Quality-focused meal preparation
-              </span>
-            </div>
-
-          </div>
+          <BulletGrid
+            items={[
+              "Fresh vegetarian and non-vegetarian meals",
+              "Hygienic kitchen and dining area",
+              "Balanced meal options",
+              "Quality-focused meal preparation",
+            ]}
+          />
         </div>
 
         {/* IMAGE 3 */}
-        <div className="relative w-full h-[300px] rounded-2xl overflow-hidden">
+        <div className="relative w-full h-[320px] rounded-2xl overflow-hidden">
           <Image
             src="/boys/room3.webp"
             alt="Hostel Facilities"
@@ -230,48 +167,21 @@ export default function BoysHostelKengeri() {
             Prime Location with Excellent Connectivity
           </h2>
 
-          <p className="text-gray-600 mb-6">
+          <p className="text-gray-600 leading-relaxed">
             Our hostel is strategically located in Kengeri Bangalore with
             excellent connectivity to educational institutions and essential
             services.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-5">
-
-            <div className="flex items-start gap-3">
-              <span className="text-xl leading-none">•</span>
-              <span className="text-gray-700">
-                Christ University Kengeri Campus
-              </span>
-            </div>
-
-            <div className="flex items-start gap-3 md:justify-self-end">
-              <span className="text-xl leading-none">•</span>
-              <span className="text-gray-700">
-                Public transportation facilities
-              </span>
-            </div>
-
-            <div className="flex items-start gap-3">
-              <span className="text-xl leading-none">•</span>
-              <span className="text-gray-700">Restaurants and cafes</span>
-            </div>
-
-            <div className="flex items-start gap-3 md:justify-self-end">
-              <span className="text-xl leading-none">•</span>
-              <span className="text-gray-700">
-                Supermarkets and medical stores
-              </span>
-            </div>
-
-            <div className="flex items-start gap-3">
-              <span className="text-xl leading-none">•</span>
-              <span className="text-gray-700">
-                Student-friendly surroundings
-              </span>
-            </div>
-
-          </div>
+          <BulletGrid
+            items={[
+              "Christ University Kengeri Campus",
+              "Public transportation facilities",
+              "Restaurants and cafes",
+              "Supermarkets and medical stores",
+              "Student-friendly surroundings",
+            ]}
+          />
         </div>
 
         {/* SECTION 5 */}
@@ -280,63 +190,24 @@ export default function BoysHostelKengeri() {
             Why Choose HappiLiv Hostels?
           </h2>
 
-          <p className="text-gray-600 mb-6">
+          <p className="text-gray-600 leading-relaxed">
             At HappiLiv Hostels, we understand the daily needs of students
             living away from home. Our goal is to provide a comfortable,
             affordable, and supportive environment where students can focus on
             academics and personal growth.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-5">
-
-            <div className="flex items-start gap-3">
-              <span className="text-xl leading-none">•</span>
-              <span className="text-gray-700">
-                Safe and secure accommodation
-              </span>
-            </div>
-
-            <div className="flex items-start gap-3 md:justify-self-end">
-              <span className="text-xl leading-none">•</span>
-              <span className="text-gray-700">
-                Affordable pricing options
-              </span>
-            </div>
-
-            <div className="flex items-start gap-3">
-              <span className="text-xl leading-none">•</span>
-              <span className="text-gray-700">Prime location in Kengeri</span>
-            </div>
-
-            <div className="flex items-start gap-3 md:justify-self-end">
-              <span className="text-xl leading-none">•</span>
-              <span className="text-gray-700">
-                Student-friendly atmosphere
-              </span>
-            </div>
-
-            <div className="flex items-start gap-3">
-              <span className="text-xl leading-none">•</span>
-              <span className="text-gray-700">
-                Modern amenities and facilities
-              </span>
-            </div>
-
-            <div className="flex items-start gap-3 md:justify-self-end">
-              <span className="text-xl leading-none">•</span>
-              <span className="text-gray-700">
-                Hygienic food and clean surroundings
-              </span>
-            </div>
-
-            <div className="flex items-start gap-3">
-              <span className="text-xl leading-none">•</span>
-              <span className="text-gray-700">
-                Reliable hostel management support
-              </span>
-            </div>
-
-          </div>
+          <BulletGrid
+            items={[
+              "Safe and secure accommodation",
+              "Affordable pricing options",
+              "Prime location in Kengeri",
+              "Student-friendly atmosphere",
+              "Modern amenities and facilities",
+              "Hygienic food and clean surroundings",
+              "Reliable hostel management support",
+            ]}
+          />
         </div>
 
         {/* FEATURES */}
@@ -349,7 +220,6 @@ export default function BoysHostelKengeri() {
           </h2>
 
           <div className="space-y-4">
-
             {[
               {
                 q: "Which is the best boys hostel in Kengeri Bangalore?",
@@ -385,7 +255,6 @@ export default function BoysHostelKengeri() {
                 </p>
               </div>
             ))}
-
           </div>
         </div>
 
@@ -409,25 +278,25 @@ export default function BoysHostelKengeri() {
           </div>
 
           {/* CONTACT CARD */}
-          <div className="bg-blue-600 rounded-2xl p-8 text-white h-[450px] flex flex-col justify-center">
+          <div className="bg-[#EE1C4C] rounded-2xl p-8 text-white h-[450px] flex flex-col justify-center">
             <h3 className="text-2xl font-semibold mb-6">
               Contact HappiLiv Hostels
             </h3>
 
             <div className="space-y-5">
 
-              <div className="bg-white/20 p-4 rounded-xl">
+              <div className="bg-[#FFFFFF2A] p-4 rounded-xl">
                 <p className="font-semibold mb-1">Phone</p>
                 <p>+91 63630 98384</p>
                 <p>+91 63661 24184</p>
               </div>
 
-              <div className="bg-white/20 p-4 rounded-xl">
+              <div className="bg-[#FFFFFF2A] p-4 rounded-xl">
                 <p className="font-semibold mb-1">WhatsApp</p>
                 <p>+91 78928 81368</p>
               </div>
 
-              <div className="bg-white/20 p-4 rounded-xl">
+              <div className="bg-[#FFFFFF2A] p-4 rounded-xl">
                 <p className="font-semibold mb-1">Email</p>
                 <p>happilivhostels@gmail.com</p>
               </div>

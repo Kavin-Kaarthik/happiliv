@@ -1,6 +1,10 @@
-import BannerSection from "./Components/Banner";
-import ContactFormSection from "./Components/ContactSection";
-import WhyChoose from "./Components/Why";
+import Banner from "./components/Banner";
+import Rooms from "./components/Rooms";
+import ContactSection from "./components/ContactSection";
+import Content from "./components/Content";
+import SigleContent from "./components/SigleContent";
+import Why from "./components/Why";
+
 import { Metadata } from "next";
 import Image from "next/image";
 
@@ -25,10 +29,11 @@ const BulletGrid = ({ items }: { items: string[] }) => (
 export default function BoysHostelNearKumbalagodu() {
   return (
     <>
-      <BannerSection />
+      <Banner />
 
-      <section className="px-6 md:px-16 py-12 space-y-12">
+      <section className="px-6 md:px-16 py-12 space-y-14">
 
+        {/* HERO SECTION */}
         <div>
           <h1 className="text-3xl md:text-4xl font-bold mb-4">
             Boys Hostel Near Kumbalagodu
@@ -56,7 +61,8 @@ export default function BoysHostelNearKumbalagodu() {
           </p>
         </div>
 
-        <div className="relative w-full h-[300px] rounded-2xl overflow-hidden">
+        {/* IMAGE 1 */}
+        <div className="relative w-full h-[320px] rounded-2xl overflow-hidden">
           <Image
             src="/boys/room1.webp"
             alt="Boys Hostel Near Kumbalagodu"
@@ -89,7 +95,8 @@ export default function BoysHostelNearKumbalagodu() {
           />
         </div>
 
-        <div className="relative w-full h-[300px] rounded-2xl overflow-hidden">
+        {/* IMAGE 2 */}
+        <div className="relative w-full h-[320px] rounded-2xl overflow-hidden">
           <Image
             src="/boys/room2.webp"
             alt="Affordable Boys Hostel"
@@ -146,7 +153,8 @@ export default function BoysHostelNearKumbalagodu() {
           />
         </div>
 
-        <div className="relative w-full h-[300px] rounded-2xl overflow-hidden">
+        {/* IMAGE 3 */}
+        <div className="relative w-full h-[320px] rounded-2xl overflow-hidden">
           <Image
             src="/boys/room3.webp"
             alt="Hostel Facilities"
@@ -177,35 +185,13 @@ export default function BoysHostelNearKumbalagodu() {
           />
         </div>
 
+        {/* COMPONENTS */}
+        <Rooms />
+        <Why />
+        <Content />
+        <SigleContent />
+
         {/* SECTION 5 */}
-        <div>
-          <h2 className="text-2xl font-semibold mb-4">
-            Why Choose HappiLiv Hostels?
-          </h2>
-
-          <p className="text-gray-600 leading-relaxed">
-            At HappiLiv Hostels, we understand the daily needs of students
-            living away from home. Our goal is to provide a comfortable,
-            affordable, and supportive environment where students can focus on
-            academics and personal growth.
-          </p>
-
-          <BulletGrid
-            items={[
-              "Safe and secure accommodation",
-              "Affordable pricing options",
-              "Prime location near Kumbalagodu",
-              "Student-friendly atmosphere",
-              "Modern amenities and facilities",
-              "Hygienic food and clean surroundings",
-              "Reliable hostel management support",
-            ]}
-          />
-        </div>
-
-        <WhyChoose />
-
-        {/* SECTION 6 */}
         <div>
           <h2 className="text-2xl font-semibold mb-4">
             Comfortable Student Living Experience
@@ -276,6 +262,7 @@ export default function BoysHostelNearKumbalagodu() {
       <section className="w-full bg-white pb-16 px-6 md:px-16">
         <div className="grid grid-cols-1 lg:grid-cols-[60%_40%] gap-10 items-stretch">
 
+          {/* GOOGLE MAP */}
           <div className="h-[450px]">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.709270117793!2d77.43257937358699!3d12.862045017273731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae38c490000001%3A0xaebe47889363e5de!2sHappiLiv%20Hostel!5e0!3m2!1sen!2sin!4v1770802434571!5m2!1sen!2sin"
@@ -288,6 +275,7 @@ export default function BoysHostelNearKumbalagodu() {
             ></iframe>
           </div>
 
+          {/* CONTACT CARD */}
           <div className="bg-[#EE1C4C] rounded-2xl p-8 text-white h-[450px] flex flex-col justify-center">
 
             <h3 className="text-2xl font-semibold mb-6">
@@ -318,7 +306,7 @@ export default function BoysHostelNearKumbalagodu() {
         </div>
       </section>
 
-      <ContactFormSection />
+      <ContactSection />
     </>
   );
 }
