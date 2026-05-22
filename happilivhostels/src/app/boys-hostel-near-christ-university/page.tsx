@@ -1,3 +1,4 @@
+
 import Banner from "./component/Banner";
 import Rooms from "./component/Rooms";
 import ContactSection from "./component/ContactSection";
