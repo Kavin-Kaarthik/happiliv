@@ -1,11 +1,8 @@
 import Banner from "./component/Banner";
-import Rooms from "./component/Rooms";
-import ContactSection from "./component/ContactSection";
-import Content from "./component/Content";
-import SigleContent from "./component/SigleContent";
-import Why from "./component/Why";
+import Features from "./component/Features";
 
 import { Metadata } from "next";
+import Link from "next/link";
 import Image from "next/image";
 
 export const metadata: Metadata = {
@@ -182,12 +179,6 @@ export default function BoysHostelChristUniversity() {
           />
         </div>
 
-        {/* COMPONENTS */}
-        <Rooms />
-        <Why />
-        <Content />
-        <SigleContent />
-
         {/* SECTION 5 */}
         <div>
           <h2 className="text-2xl font-semibold mb-4">
@@ -211,6 +202,9 @@ export default function BoysHostelChristUniversity() {
             ]}
           />
         </div>
+
+        {/* FEATURES */}
+        <Features />
 
       </section>
 
@@ -260,8 +254,6 @@ export default function BoysHostelChristUniversity() {
 
         </div>
       </section>
-
-      <ContactSection />
     </>
   );
 }
