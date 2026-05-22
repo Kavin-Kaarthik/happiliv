@@ -69,31 +69,37 @@ export default function BoysHostelChristUniversity() {
             academics.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-y-6 gap-x-20 text-gray-700 text-lg font-medium">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-5">
 
             <div className="flex items-start gap-3">
-              <span className="mt-1">•</span>
-              <span>24/7 CCTV surveillance</span>
+              <span className="text-xl leading-none">•</span>
+              <span className="text-gray-700">24/7 CCTV surveillance</span>
             </div>
 
-            <div className="flex items-start justify-end gap-3 text-right">
-              <span className="mt-1">•</span>
-              <span>Secure entry access</span>
-            </div>
-
-            <div className="flex items-start gap-3">
-              <span className="mt-1">•</span>
-              <span>Dedicated hostel support staff</span>
-            </div>
-
-            <div className="flex items-start justify-end gap-3 text-right">
-              <span className="mt-1">•</span>
-              <span>Safe and student-friendly atmosphere</span>
+            <div className="flex items-start gap-3 md:justify-self-end">
+              <span className="text-xl leading-none">•</span>
+              <span className="text-gray-700">Secure entry access</span>
             </div>
 
             <div className="flex items-start gap-3">
-              <span className="mt-1">•</span>
-              <span>Regular monitoring and maintenance</span>
+              <span className="text-xl leading-none">•</span>
+              <span className="text-gray-700">
+                Dedicated hostel support staff
+              </span>
+            </div>
+
+            <div className="flex items-start gap-3 md:justify-self-end">
+              <span className="text-xl leading-none">•</span>
+              <span className="text-gray-700">
+                Safe and student-friendly atmosphere
+              </span>
+            </div>
+
+            <div className="flex items-start gap-3">
+              <span className="text-xl leading-none">•</span>
+              <span className="text-gray-700">
+                Regular monitoring and maintenance
+              </span>
             </div>
 
           </div>
@@ -110,41 +116,47 @@ export default function BoysHostelChristUniversity() {
             with essential facilities and comfort.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-y-6 gap-x-20 text-gray-700 text-lg font-medium">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-5">
 
             <div className="flex items-start gap-3">
-              <span className="mt-1">•</span>
-              <span>Fully furnished rooms</span>
+              <span className="text-xl leading-none">•</span>
+              <span className="text-gray-700">Fully furnished rooms</span>
             </div>
 
-            <div className="flex items-start justify-end gap-3 text-right">
-              <span className="mt-1">•</span>
-              <span>Comfortable beds and storage spaces</span>
-            </div>
-
-            <div className="flex items-start gap-3">
-              <span className="mt-1">•</span>
-              <span>High-speed WiFi connectivity</span>
-            </div>
-
-            <div className="flex items-start justify-end gap-3 text-right">
-              <span className="mt-1">•</span>
-              <span>Daily housekeeping services</span>
+            <div className="flex items-start gap-3 md:justify-self-end">
+              <span className="text-xl leading-none">•</span>
+              <span className="text-gray-700">
+                Comfortable beds and storage spaces
+              </span>
             </div>
 
             <div className="flex items-start gap-3">
-              <span className="mt-1">•</span>
-              <span>Laundry facilities</span>
+              <span className="text-xl leading-none">•</span>
+              <span className="text-gray-700">
+                High-speed WiFi connectivity
+              </span>
             </div>
 
-            <div className="flex items-start justify-end gap-3 text-right">
-              <span className="mt-1">•</span>
-              <span>Hygienic washrooms</span>
+            <div className="flex items-start gap-3 md:justify-self-end">
+              <span className="text-xl leading-none">•</span>
+              <span className="text-gray-700">
+                Daily housekeeping services
+              </span>
             </div>
 
             <div className="flex items-start gap-3">
-              <span className="mt-1">•</span>
-              <span>Reliable power backup</span>
+              <span className="text-xl leading-none">•</span>
+              <span className="text-gray-700">Laundry facilities</span>
+            </div>
+
+            <div className="flex items-start gap-3 md:justify-self-end">
+              <span className="text-xl leading-none">•</span>
+              <span className="text-gray-700">Hygienic washrooms</span>
+            </div>
+
+            <div className="flex items-start gap-3">
+              <span className="text-xl leading-none">•</span>
+              <span className="text-gray-700">Reliable power backup</span>
             </div>
 
           </div>
@@ -171,26 +183,32 @@ export default function BoysHostelChristUniversity() {
             healthy student lifestyle.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-y-6 gap-x-20 text-gray-700 text-lg font-medium">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-5">
 
             <div className="flex items-start gap-3">
-              <span className="mt-1">•</span>
-              <span>Fresh vegetarian and non-vegetarian meals</span>
+              <span className="text-xl leading-none">•</span>
+              <span className="text-gray-700">
+                Fresh vegetarian and non-vegetarian meals
+              </span>
             </div>
 
-            <div className="flex items-start justify-end gap-3 text-right">
-              <span className="mt-1">•</span>
-              <span>Hygienic kitchen and dining facilities</span>
+            <div className="flex items-start gap-3 md:justify-self-end">
+              <span className="text-xl leading-none">•</span>
+              <span className="text-gray-700">
+                Hygienic kitchen and dining facilities
+              </span>
             </div>
 
             <div className="flex items-start gap-3">
-              <span className="mt-1">•</span>
-              <span>Balanced meal options</span>
+              <span className="text-xl leading-none">•</span>
+              <span className="text-gray-700">Balanced meal options</span>
             </div>
 
-            <div className="flex items-start justify-end gap-3 text-right">
-              <span className="mt-1">•</span>
-              <span>Quality-focused meal preparation</span>
+            <div className="flex items-start gap-3 md:justify-self-end">
+              <span className="text-xl leading-none">•</span>
+              <span className="text-gray-700">
+                Quality-focused meal preparation
+              </span>
             </div>
 
           </div>
@@ -217,31 +235,39 @@ export default function BoysHostelChristUniversity() {
             convenient location near Christ University Kengeri campus.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-y-6 gap-x-20 text-gray-700 text-lg font-medium">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-5">
 
             <div className="flex items-start gap-3">
-              <span className="mt-1">•</span>
-              <span>Christ University Kengeri Campus</span>
+              <span className="text-xl leading-none">•</span>
+              <span className="text-gray-700">
+                Christ University Kengeri Campus
+              </span>
             </div>
 
-            <div className="flex items-start justify-end gap-3 text-right">
-              <span className="mt-1">•</span>
-              <span>Public transportation facilities</span>
-            </div>
-
-            <div className="flex items-start gap-3">
-              <span className="mt-1">•</span>
-              <span>Restaurants and cafes</span>
-            </div>
-
-            <div className="flex items-start justify-end gap-3 text-right">
-              <span className="mt-1">•</span>
-              <span>Supermarkets and medical stores</span>
+            <div className="flex items-start gap-3 md:justify-self-end">
+              <span className="text-xl leading-none">•</span>
+              <span className="text-gray-700">
+                Public transportation facilities
+              </span>
             </div>
 
             <div className="flex items-start gap-3">
-              <span className="mt-1">•</span>
-              <span>Student-friendly surroundings</span>
+              <span className="text-xl leading-none">•</span>
+              <span className="text-gray-700">Restaurants and cafes</span>
+            </div>
+
+            <div className="flex items-start gap-3 md:justify-self-end">
+              <span className="text-xl leading-none">•</span>
+              <span className="text-gray-700">
+                Supermarkets and medical stores
+              </span>
+            </div>
+
+            <div className="flex items-start gap-3">
+              <span className="text-xl leading-none">•</span>
+              <span className="text-gray-700">
+                Student-friendly surroundings
+              </span>
             </div>
 
           </div>
@@ -258,7 +284,58 @@ export default function BoysHostelChristUniversity() {
             living away from home.
           </p>
 
-          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-5">
+
+            <div className="flex items-start gap-3">
+              <span className="text-xl leading-none">•</span>
+              <span className="text-gray-700">
+                Safe and secure accommodation
+              </span>
+            </div>
+
+            <div className="flex items-start gap-3 md:justify-self-end">
+              <span className="text-xl leading-none">•</span>
+              <span className="text-gray-700">
+                Affordable pricing options
+              </span>
+            </div>
+
+            <div className="flex items-start gap-3">
+              <span className="text-xl leading-none">•</span>
+              <span className="text-gray-700">
+                Prime location near Christ University
+              </span>
+            </div>
+
+            <div className="flex items-start gap-3 md:justify-self-end">
+              <span className="text-xl leading-none">•</span>
+              <span className="text-gray-700">
+                Student-friendly atmosphere
+              </span>
+            </div>
+
+            <div className="flex items-start gap-3">
+              <span className="text-xl leading-none">•</span>
+              <span className="text-gray-700">
+                Modern amenities and facilities
+              </span>
+            </div>
+
+            <div className="flex items-start gap-3 md:justify-self-end">
+              <span className="text-xl leading-none">•</span>
+              <span className="text-gray-700">
+                Hygienic food and clean surroundings
+              </span>
+            </div>
+
+            <div className="flex items-start gap-3">
+              <span className="text-xl leading-none">•</span>
+              <span className="text-gray-700">
+                Reliable hostel management support
+              </span>
+            </div>
+
+          </div>
         </div>
 
         <Features />

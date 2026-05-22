@@ -338,6 +338,13 @@ export default function PgForBoysChristUniversity() {
             Contact us today to learn more about room availability, facilities,
             and PG admission details.
           </p>
+
+          <Link
+            href="/contact"
+            className="inline-block mt-6 bg-blue-600 text-white px-6 py-3 rounded-xl hover:bg-blue-700 transition"
+          >
+            Contact Us
+          </Link>
         </div>
 
         {/* FAQ SECTION */}
