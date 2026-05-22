@@ -1,9 +1,9 @@
-import Banner from "./Components/Banner";
-import Rooms from "./Components/Rooms";
-import ContactSection from "./Components/ContactSection";
-import Content from "./Components/Content";
-import SigleContent from "./Components/SigleContent";
-import Why from "./Components/Why";
+import Banner from "./component/Banner";
+import Rooms from "./component/Rooms";
+import ContactSection from "./component/ContactSection";
+import Content from "./component/Content";
+import SigleContent from "./component/SigleContent";
+import Why from "./component/Why";
 
 import { Metadata } from "next";
 import Image from "next/image";
@@ -258,7 +258,6 @@ export default function PgForBoysChristUniversity() {
       <section className="w-full bg-white pb-16 px-6 md:px-16">
         <div className="grid grid-cols-1 lg:grid-cols-[60%_40%] gap-10 items-stretch">
 
-          {/* GOOGLE MAP */}
           <div className="h-[450px]">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.709270117793!2d77.43257937358699!3d12.862045017273731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae38c490000001%3A0xaebe47889363e5de!2sHappiLiv%20Hostel!5e0!3m2!1sen!2sin!4v1770802434571!5m2!1sen!2sin"
@@ -271,7 +270,6 @@ export default function PgForBoysChristUniversity() {
             ></iframe>
           </div>
 
-          {/* CONTACT CARD */}
           <div className="bg-[#EE1C4C] rounded-2xl p-8 text-white h-[450px] flex flex-col justify-center">
 
             <h3 className="text-2xl font-semibold mb-6">

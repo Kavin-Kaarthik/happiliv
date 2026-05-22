@@ -1,5 +1,5 @@
-import Banner from "./components/Banner";
-import Features from "./components/Features";
+import Banner from "./compnent/Banner";
+import Features from "./compnent/Features";
 
 import { Metadata } from "next";
 import Link from "next/link";

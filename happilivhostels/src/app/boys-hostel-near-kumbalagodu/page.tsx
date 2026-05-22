@@ -1,9 +1,9 @@
-import Banner from "./components/Banner";
-import Rooms from "./components/Rooms";
-import ContactSection from "./components/ContactSection";
-import Content from "./components/Content";
-import SigleContent from "./components/SigleContent";
-import Why from "./components/Why";
+import Banner from "./component/Banner";
+import Rooms from "./component/Rooms";
+import ContactSection from "./component/ContactSection";
+import Content from "./component/Content";
+import SigleContent from "./component/SigleContent";
+import Why from "./component/Why";
 
 import { Metadata } from "next";
 import Image from "next/image";

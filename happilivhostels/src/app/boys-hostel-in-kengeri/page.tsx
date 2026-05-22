@@ -1,8 +1,11 @@
-import Banner from "./components/Banner";
-import Features from "./components/Features";
+import Banner from "./component/Banner";
+import Rooms from "./component/Rooms";
+import ContactSection from "./component/ContactSection";
+import Content from "./component/Content";
+import SigleContent from "./component/SigleContent";
+import Why from "./component/Why";
 
 import { Metadata } from "next";
-import Link from "next/link";
 import Image from "next/image";
 
 export const metadata: Metadata = {
@@ -210,8 +213,7 @@ export default function BoysHostelKengeri() {
           />
         </div>
 
-        {/* FEATURES */}
-        <Features />
+        <Why />
 
         {/* FAQ SECTION */}
         <div>
@@ -279,6 +281,7 @@ export default function BoysHostelKengeri() {
 
           {/* CONTACT CARD */}
           <div className="bg-[#EE1C4C] rounded-2xl p-8 text-white h-[450px] flex flex-col justify-center">
+
             <h3 className="text-2xl font-semibold mb-6">
               Contact HappiLiv Hostels
             </h3>
@@ -306,6 +309,8 @@ export default function BoysHostelKengeri() {
 
         </div>
       </section>
+
+      <ContactSection />
     </>
   );
 }
